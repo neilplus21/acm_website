@@ -1,0 +1,78 @@
+
+@font-face {
+  font-family: myfont;
+  src: url('/src/menseal-semibold-CqC6yNDC.ttf');
+}
+
+.pagesContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pageSection {
+  font-family: myfont;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  align-items:center;
+  color: white;
+}
+
+.pageSection h1{
+  color: #fff;
+}
+
+.animate-text{
+  z-index: 10;
+}
+
+
+.section1 {
+  background-color: rgb(0, 0, 0);
+  /* color: rgb(45, 229, 88); */
+  font-size: 2.5vw;
+
+}
+
+.explore{
+  position: relative;
+  top: 10%;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #00FF7F; 
+  color: #000000;
+  cursor: pointer;
+  font-size: large;
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: glow 1.5s infinite;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+.explore:hover{
+  background-color: #00b86b;
+}
+.section2 {
+  background-color: green;
+  
+}
+
+.section3 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.section4{
+  background-color: palegoldenrod;
+  display: flex;
+  flex-direction: row;
+}

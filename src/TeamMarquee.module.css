@@ -1,0 +1,147 @@
+/* Center the entire marquee container within the viewport */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    gap: 1.5rem;
+    background: #0f172a;
+    height: 100vh;
+    padding: 1.5rem;
+    overflow: hidden; /* Prevent the entire page from scrolling */
+  }
+  
+  /* Column stays within the fixed height of the container */
+  .column {
+    flex: 1;
+    min-width: 280px;
+    height: 95vh; /* Increased the height to 95vh for more space */
+    overflow: hidden; /* Prevent extra scroll */
+    display: flex;
+    align-items: center; /* Center the marquee within the column */
+  }
+  
+  /* Marquee should take up the full height of the column */
+  .marquee {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* The list of team members in each column */
+  .membersList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Each team member card */
+  .card {
+    width: 280px;
+    height: 380px;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    background: #1e293b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(4px);
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    transform: translateY(2rem);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .position {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Add subtle floating animation to the cards */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  
