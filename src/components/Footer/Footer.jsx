@@ -29,7 +29,7 @@ const Footer = () => {
         <header className={styles.header}>
           <div className={styles.logoContainer}>
             <img 
-              src="/api/placeholder/50/50"
+              src="/images/acm.png"
               alt="ACM Logo" 
               className={styles.logo}
             />

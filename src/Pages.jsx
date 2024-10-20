@@ -18,22 +18,31 @@ const profiles = [
   {
     name: "Neil Mamen Prakash",
     role: "ChairPerson",
-    profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg"
+    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg"
+    profilePic:'/images/neill.webp'
   },
   {
     name: "Namratha M",
     role: "Vice ChairPerson",
-    profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg"
+    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg"
+    profilePic:'/images/nam.webp'
+
   },
   {
     name: "Rashmitha r Bhangera",
     role: "Tresures",
-    profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg"
+    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg"
+
+ profilePic:'/images/Rashmitha.webp'
+
   },
+
   {
     name: "Kushagr Sharma ",
     role: "Web Master",
-    profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729365119/kush_wsph8a.jpg"
+    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729365119/kush_wsph8a.jpg"
+  profilePic:'/images/kkk.jpg'
+
   }
 
 ];
@@ -69,6 +78,11 @@ export default function Pages() {
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
     text: "Our Team ",
+    speed: 0.6,
+  });
+
+  const { ref: scrambleRef6, replay: scrambleReplay6 } = useScramble({
+    text: "About",
     speed: 0.6,
   });
 
@@ -131,6 +145,7 @@ export default function Pages() {
   //for events 
   const handleMouseEnter4 = () => scrambleReplay4();
   const handleMouseEnter5 = () => scrambleReplay5();
+  const handleMouseEnter6 = () => scrambleReplay6();
 
 
   const handleCoreClick=()=>{
@@ -153,7 +168,8 @@ export default function Pages() {
 
       {/* second page about section  */}
       <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-        <h1 className="animate-text" data-scroll data-scroll-speed="2">Section 2: Green Background</h1>
+        <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1>
+        <h1  className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1>
       </div>
 
 
@@ -196,7 +212,7 @@ export default function Pages() {
             textAlign: 'center'
           }}
          
-          className="animate-text" data-scroll data-scroll-speed="3">Our Team</h1>
+          className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
 
 
 

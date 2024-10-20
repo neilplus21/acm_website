@@ -1,108 +1,120 @@
 .card {
   margin-left: 10px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 20rem;
-    transition: transform 0.2s ease;
-    height: 22vw;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Responsive width */
+  max-width: 300px;
+  transition: transform 0.2s ease;
+  min-height: 450px; /* Ensures minimum height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 4/5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card {
+    max-width: 280px;
+    padding: 1.5rem;
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
+
   .imageWrapper {
-    width: 8rem;
-    height: 10rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    max-width: 180px;
   }
-  
-  .imageWrapper:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 260px;
+    padding: 1.25rem;
+    margin: 0.5rem;
+    min-height: 350px; /* Reduced height for tablets */
   }
-  
-  .image {
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
+
+  .imageWrapper {
+    max-width: 160px;
   }
-  
+
   .name {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #1F2937;
-    margin: 0;
-    text-align: center;
+    font-size: 1.25rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 240px;
+    padding: 1rem;
+    min-height: 300px; /* Further reduced height for mobile */
+  }
+
+  .imageWrapper {
+    max-width: 140px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
   .title {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    text-align: center;
+    font-size: 0.9rem;
   }
-  
-  .socialLinks {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+}
+
+@media (max-width: 320px) {
+  .card {
+    max-width: 220px;
+    min-height: 280px; /* Minimum height for very small screens */
   }
-  
-  .socialButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.2s ease;
+
+  .imageWrapper {
+    max-width: 120px;
   }
-  
-  .socialButton svg {
-    width: 1.25rem;
-    height: 1.25rem;
-    color: #4B5563;
-    transition: color 0.2s ease;
-  }
-  
-  .socialButton:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .socialButton:hover svg {
-    color: #3B82F6;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 640px) {
-    .card {
-      padding: 1.5rem;
-    }
-    
-    .imageWrapper {
-      width: 6rem;
-      height: 6rem;
-    }
-    
-    .name {
-      font-size: 1.25rem;
-    }
-  }
+}

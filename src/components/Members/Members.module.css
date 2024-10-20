@@ -212,7 +212,9 @@ body{
   src: url('/src/menseal-semibold-CqC6yNDC.ttf');
 }
 
-
+body{
+  font-family: myfont;
+}
 .membersContainer {
   padding: 20px;
   background-color: #000000;

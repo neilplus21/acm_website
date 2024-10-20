@@ -1,53 +1,52 @@
-
 @font-face {
   font-family: myfont;
   src: url('/src/menseal-semibold-CqC6yNDC.ttf');
 }
-
 
 .pagesContainer {
   position: relative;
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
+  border: 1px solid black;
 }
 
 .pageSection {
   font-family: myfont;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1vw;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   color: white;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.pageSection h1{
+.pageSection h1 {
   color: #fff;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-.animate-text{
+.animate-text {
   z-index: 10;
 }
 
-
 .section1 {
   background-color: rgb(0, 0, 0);
-  /* color: rgb(45, 229, 88); */
   font-size: 2.5vw;
-
 }
 
-.explore{
+.explore {
   position: relative;
   top: 10%;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 30px;
   border-radius: 10px;
-  background-color: #00FF7F; 
+  background-color: #00FF7F;
   color: #000000;
   cursor: pointer;
   font-size: large;
@@ -55,15 +54,15 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   animation: glow 1.5s infinite;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
 }
-.explore:hover{
+
+.explore:hover {
   background-color: #00b86b;
 }
+
 .section2 {
   background-color: rgb(0, 0, 0);
-  height: 90vh;
-  
+  min-height: 90vh;
 }
 
 .section3 {
@@ -71,10 +70,118 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.section4{
+
+.section4 {
   background-color: palegoldenrod;
   display: flex;
   flex-direction: row;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .section1 {
+    font-size: 3vw;
+  }
+
+  .pageSection h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section1 {
+    font-size: 4vw;
+  }
+
+  .pageSection {
+    padding: 15px;
+    gap: 2vw;
+  }
+
+  .pageSection h1 {
+    font-size: 2rem;
+  }
+
+  .explore {
+    padding: 8px 25px;
+    font-size: medium;
+  }
+
+  /* Adjust the team section */
+  .section3 div[style*="flex-direction: row"] {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  /* Adjust upcoming events title */
+  .section3 h1[style*="font-size: 100px"] {
+    font-size: 40px !important;
+    letter-spacing: 5px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section1 {
+    font-size: 5vw;
+  }
+
+  .pageSection {
+    padding: 10px;
+    gap: 3vw;
+  }
+
+  .pageSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .explore {
+    padding: 6px 20px;
+    font-size: small;
+  }
+
+  /* Further reduce upcoming events title */
+  .section3 h1[style*="font-size: 100px"] {
+    font-size: 30px !important;
+    letter-spacing: 3px !important;
+  }
+
+  /* Adjust team section button */
+  .section3 button[style*="padding"] {
+    padding: 8px 20px !important;
+  }
+}
+
+/* Handle very small screens */
+@media screen and (max-width: 320px) {
+  .section1 {
+    font-size: 6vw;
+  }
+
+  .pageSection h1 {
+    font-size: 1.2rem;
+  }
+
+  .section3 h1[style*="font-size: 100px"] {
+    font-size: 24px !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+/* Height-based media queries */
+@media screen and (max-height: 600px) {
+  .pageSection {
+    min-height: 120vh;
+  }
+
+  .section2 {
+    min-height: 110vh;
+  }
+}
+
+/* Add smooth scrolling for all screen sizes */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
