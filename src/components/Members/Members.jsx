@@ -327,7 +327,6 @@ const Members = () => {
     };
   }, []);
 
-  // Helper function to render group sections based on category
   const renderMemberGroup = (category, title) => {
     const members = membersData.filter(member => member.category === category);
     

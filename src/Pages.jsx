@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useScramble } from 'use-scramble';
-
+import Footer from './components/Footer/Footer';
 import Events from './components/Event/Events';
 import ProfileCard from './ProfileCard';
  import { Link } from 'react-router-dom';
@@ -228,8 +228,11 @@ export default function Pages() {
         </div>
       </div>
 
-      <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-        <h1 className="animate-text" data-scroll data-scroll-speed="2">Section 2: Green Background</h1>
+      <div style={{
+        height:'70vh'
+      }} id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
+      
+        <Footer />
       </div>
 
 

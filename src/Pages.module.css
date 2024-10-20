@@ -4,6 +4,7 @@
   src: url('/src/menseal-semibold-CqC6yNDC.ttf');
 }
 
+
 .pagesContainer {
   position: relative;
   overflow: hidden;
@@ -60,7 +61,8 @@
   background-color: #00b86b;
 }
 .section2 {
-  background-color: green;
+  background-color: rgb(0, 0, 0);
+  height: 90vh;
   
 }
 
