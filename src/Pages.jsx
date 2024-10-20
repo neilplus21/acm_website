@@ -9,9 +9,9 @@ import { useScramble } from 'use-scramble';
 import Footer from './components/Footer/Footer';
 import Events from './components/Event/Events';
 import ProfileCard from './ProfileCard';
- import { Link } from 'react-router-dom';
- import { useNavigate } from 'react-router-dom';
- import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 //all profiles 
 
 const profiles = [
@@ -19,13 +19,13 @@ const profiles = [
     name: "Neil Mamen Prakash",
     role: "ChairPerson",
     // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg"
-    profilePic:'/images/neill.webp'
+    profilePic: '/images/neill.webp'
   },
   {
     name: "Namratha M",
     role: "Vice ChairPerson",
     // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg"
-    profilePic:'/images/nam.webp'
+    profilePic: '/images/nam.webp'
 
   },
   {
@@ -33,7 +33,7 @@ const profiles = [
     role: "Tresures",
     // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg"
 
- profilePic:'/images/Rashmitha.webp'
+    profilePic: '/images/Rashmitha.webp'
 
   },
 
@@ -41,7 +41,7 @@ const profiles = [
     name: "Kushagr Sharma ",
     role: "Web Master",
     // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729365119/kush_wsph8a.jpg"
-  profilePic:'/images/kkk.jpg'
+    profilePic: '/images/kkk.jpg'
 
   }
 
@@ -126,10 +126,10 @@ export default function Pages() {
 
 
   //this function on clik scrolls to next page or section 
-  const handleScrollToSection2 = () => {
+  const handleScrollToSection = (secID) => {
     if (scrollInstanceRef.current) {
       // Scroll to the section with the ID 'section2'
-      scrollInstanceRef.current.scrollTo('#section2', {
+      scrollInstanceRef.current.scrollTo(secID, {
         duration: 1000, // Smooth scroll duration (in milliseconds)
         offset: 0,
         easing: [0.25, 0.00, 0.35, 1.00],
@@ -148,110 +148,115 @@ export default function Pages() {
   const handleMouseEnter6 = () => scrambleReplay6();
 
 
-  const handleCoreClick=()=>{
-    navigate('/team');
-    console.log('clicked');
-  }
-
-
 
   return (
-    <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
-      {/* first page(Hero) */}
-      <div className={styles.pageSection + ' ' + styles.section1} data-scroll-section ref={container}>
-        <h1 ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
-        <h1 ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
-        <h1 ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
+    <>
 
-        <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection2}>Explore</button>
-      </div>
+      <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
+        <Navbar onNavigate={handleScrollToSection} />
+        {/* first page(Hero) */}
+        <div  id='section1' className={styles.pageSection + ' ' + styles.section1} data-scroll-section ref={container}>
+          <h1 style={{
+            lineHeight:'1'
+          }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
+          <h1 style={{
+            lineHeight:'1'
+          }}  ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
+          <h1 style={{
+            lineHeight:'1'
+          }}  ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
 
-      {/* second page about section  */}
-      <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-        <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1>
-        <h1  className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1>
-      </div>
-
-
-      {/* 3rd page upcoming evenets  */}
-
-      <div className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
-        <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
-          style={{
-            fontSize: '100px',
-            letterSpacing: '10px',
-            color: '#2cff05',
-            textTransform: 'uppercase',
-            fontWeight: 'bold',
-            margin: '10px 0',
-            textAlign: 'center'
-          }}
-          data-scroll
-          data-scroll-speed="2"
-        >
-          Upcoming Events...
-        </h1>
-
-        <Events />
-        <button>More</button>
-      </div>
-
-
-
-      {/* core members */}
-
-      <div className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
-        <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
-          style={{
-            fontSize: '100px',
-            letterSpacing: '10px',
-            marginTop:'10px',
-            color: '#2cff05',
-            textTransform: 'uppercase',
-            fontWeight: 'bold',
-            textAlign: 'center'
-          }}
-         
-          className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
-
-
-
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'row',
-            gap: '20px'
-          }}
-        >
-          {profiles.map((profile, index) => (
-            <ProfileCard
-              key={index}
-              name={profile.name}
-              role={profile.role}
-              profilePic={profile.profilePic}
-            />
-          ))}
-        <button 
-         onClick={()=>navigate('/members')}
-        style={{
-          paddingTop:'10px',
-          paddingBottom:'10px',
-          paddingLeft:'30px',
-          paddingRight:'30px',
-          textAlign:'center'
-        }}>More</button>
+          <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection}>Explore</button>
         </div>
-      </div>
 
-      <div style={{
-        height:'70vh'
-      }} id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-      
-        <Footer />
-      </div>
+        {/* second page about section  */}
+        <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
+          <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1>
+          <h1 className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1>
+        </div>
 
 
-    </div >
+        {/* 3rd page upcoming evenets  */}
+
+        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+          <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
+            style={{
+              fontSize: '100px',
+              letterSpacing: '10px',
+              color: '#2cff05',
+              textTransform: 'uppercase',
+              fontWeight: 'bold',
+              margin: '10px 0',
+              textAlign: 'center'
+            }}
+            data-scroll
+            data-scroll-speed="2"
+          >
+            Upcoming Events...
+          </h1>
+
+          <Events />
+          <button className={styles.registerBtn}>More</button>
+        </div>
+
+
+
+        {/* core members */}
+
+        <div id='section4' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+          <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
+            style={{
+              fontSize: '100px',
+              letterSpacing: '10px',
+              marginTop: '15px',
+              color: '#2cff05',
+              textTransform: 'uppercase',
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
+
+            className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
+
+
+
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'row',
+              gap: '20px'
+            }}
+          >
+            {profiles.map((profile, index) => (
+              <ProfileCard 
+                key={index}
+                name={profile.name}
+                role={profile.role}
+                profilePic={profile.profilePic}
+              />
+            ))}
+            <button className={styles.registerBtn}  
+              onClick={() => navigate('/members')}
+              style={{
+                paddingTop: '10px',
+                paddingBottom: '10px',
+                paddingLeft: '30px',
+                paddingRight: '30px',
+                textAlign: 'center'
+              }}>More</button>
+          </div>
+        </div>
+
+        <div style={{
+          height: '70vh'
+        }} id="section5" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
+
+          <Footer />
+        </div>
+
+
+      </div >
+    </>
+
   );
 }

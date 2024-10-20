@@ -9,7 +9,7 @@
   width: 100%; /* Responsive width */
   max-width: 300px;
   transition: transform 0.2s ease;
-  min-height: 450px; /* Ensures minimum height */
+  min-height: 380px; /* Ensures minimum height */
 }
 
 .card:hover {

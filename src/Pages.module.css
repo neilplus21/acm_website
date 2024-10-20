@@ -120,6 +120,19 @@
     letter-spacing: 5px !important;
   }
 }
+.registerBtn {
+  background-color: #00FF7F; 
+  color: #000000;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px; 
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: glow 1.5s infinite;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 @media screen and (max-width: 480px) {
   .section1 {
@@ -184,4 +197,9 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+.animatetext {
+
+  line-height: 1; 
 }
