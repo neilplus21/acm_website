@@ -12,27 +12,25 @@ import ProfileCard from './ProfileCard';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
+import HexagonParticles from '../src/HexagonParticles';
 //all profiles 
 
 const profiles = [
   {
     name: "Neil Mamen Prakash",
     role: "ChairPerson",
-    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg"
     profilePic: '/images/neill.webp'
   },
   {
     name: "Namratha M",
     role: "Vice ChairPerson",
-    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg"
+
     profilePic: '/images/nam.webp'
 
   },
   {
     name: "Rashmitha r Bhangera",
-    role: "Tresures",
-    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg"
-
+    role: "Tresurer",
     profilePic: '/images/Rashmitha.webp'
 
   },
@@ -40,7 +38,6 @@ const profiles = [
   {
     name: "Kushagr Sharma ",
     role: "Web Master",
-    // profilePic: "https://res.cloudinary.com/dskq6j62q/image/upload/v1729365119/kush_wsph8a.jpg"
     profilePic: '/images/kkk.jpg'
 
   }
@@ -78,7 +75,7 @@ export default function Pages() {
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
     text: "Our Team ",
-    speed: 0.6,
+    speed: 0.4,
   });
 
   const { ref: scrambleRef6, replay: scrambleReplay6 } = useScramble({
@@ -92,7 +89,7 @@ export default function Pages() {
   // GSAP Animation
   useGSAP(() => {
     gsap.from('.animate-text', {
-      y: 100,
+      y: 140,
       opacity: 0,
       duration: 1,
       stagger: 0.5,
@@ -107,6 +104,8 @@ export default function Pages() {
       ease: 'back.out(1.7)',
       color: 'pink'
     });
+
+
   }, { scope: container });
 
   // Locomotive Scroll initialization
@@ -152,21 +151,26 @@ export default function Pages() {
   return (
     <>
 
+     
       <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
         <Navbar onNavigate={handleScrollToSection} />
         {/* first page(Hero) */}
-        <div  id='section1' className={styles.pageSection + ' ' + styles.section1} data-scroll-section ref={container}>
+
+        <div id='section1' className={styles.pageSection + ' ' + styles.section1} 
+        data-scroll-section ref={container}>
+       <HexagonParticles />
+
           <h1 style={{
-            lineHeight:'1'
+            lineHeight: '1'
           }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
           <h1 style={{
-            lineHeight:'1'
-          }}  ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
+            lineHeight: '1'
+          }} ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
           <h1 style={{
-            lineHeight:'1'
-          }}  ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
-
-          <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection}>Explore</button>
+            lineHeight: '1'
+          }} ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
+          {/* 
+          <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection}>Explore</button> */}
         </div>
 
         {/* second page about section  */}
@@ -186,8 +190,8 @@ export default function Pages() {
               color: '#2cff05',
               textTransform: 'uppercase',
               fontWeight: 'bold',
-              margin: '10px 0',
-              textAlign: 'center'
+              margin: '20px 0',
+              textAlign: 'center',
             }}
             data-scroll
             data-scroll-speed="2"
@@ -212,9 +216,10 @@ export default function Pages() {
               color: '#2cff05',
               textTransform: 'uppercase',
               fontWeight: 'bold',
-              textAlign: 'center'
+              textAlign: 'center',
+              position:'relative',
+              top:'3vw'
             }}
-
             className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
 
 
@@ -228,14 +233,14 @@ export default function Pages() {
             }}
           >
             {profiles.map((profile, index) => (
-              <ProfileCard 
+              <ProfileCard
                 key={index}
                 name={profile.name}
                 role={profile.role}
                 profilePic={profile.profilePic}
               />
             ))}
-            <button className={styles.registerBtn}  
+            <button className={styles.registerBtn}
               onClick={() => navigate('/members')}
               style={{
                 paddingTop: '10px',

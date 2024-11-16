@@ -18,14 +18,14 @@ function App() {
       path: "/members",
       element: <Members />,
     },
-    {
-      path: "/a",
-      element: <TeamCard />
-    },
-    {
-      path: "/b",
-      element: <Members />
-    },
+    // {
+    //   path: "/a",
+    //   element: <TeamCard />
+    // },
+    // {
+    //   path: "/b",
+    //   element: <Members />
+    // },
 
 
   ]);

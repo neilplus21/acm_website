@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Footer from '../Footer/Footer';
+import HexagonParticles from '../../HexagonParticles';
 // as of now it's temporarily here, later we'll make a separate JSON file
 const membersData = [
   {
@@ -329,7 +330,7 @@ const membersData = [
     profilePic: '/images/susan.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
+      linkedin: "https://twitter.com", 
       github: "https://github.com"
     },
     category: 'operation'
@@ -358,6 +359,7 @@ const Members = () => {
 
     return (
       <section className={styles.groupSection} id={category}>
+      <HexagonParticles />
         <h2 className={styles.sectionHeading}>{title}</h2>
         <div className={styles.section}>
           {members.map((member, index) => (
