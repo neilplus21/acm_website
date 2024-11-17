@@ -6,7 +6,7 @@ const ProfileCard = ({ name, role, profilePic }) => {
     <div className={styles.card}>
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <img 
+          <img
             src={profilePic}
             alt={`${name}'s profile`}
             className={styles.image}

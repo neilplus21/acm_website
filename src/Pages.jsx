@@ -13,11 +13,12 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import HexagonParticles from '../src/HexagonParticles';
+import styless from './ProfileCard.module.css';
 //all profiles 
 
 const profiles = [
   {
-    name: "Neil Mamen Prakash",
+    name: "Neil Mammen Prakash",
     role: "ChairPerson",
     profilePic: '/images/neill.webp'
   },
@@ -37,7 +38,7 @@ const profiles = [
 
   {
     name: "Kushagr Sharma ",
-    role: "Web Master",
+    role: "WebMaster",
     profilePic: '/images/kkk.jpg'
 
   }
@@ -113,7 +114,7 @@ export default function Pages() {
     const scrollInstance = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      smoothMobile: true,
+      // smoothMobile: true,
     });
 
     scrollInstanceRef.current = scrollInstance;
@@ -151,14 +152,14 @@ export default function Pages() {
   return (
     <>
 
-     
+
       <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
         <Navbar onNavigate={handleScrollToSection} />
         {/* first page(Hero) */}
 
-        <div id='section1' className={styles.pageSection + ' ' + styles.section1} 
-        data-scroll-section ref={container}>
-       <HexagonParticles />
+        <div id='section1' className={styles.pageSection + ' ' + styles.section1}
+          data-scroll-section ref={container}>
+          <HexagonParticles />
 
           <h1 style={{
             lineHeight: '1'
@@ -210,15 +211,15 @@ export default function Pages() {
         <div id='section4' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
           <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
             style={{
-              fontSize: '100px',
+              fontSize: window.innerWidth <= 768 ? '60px' : '100px', /* Conditional font size */
               letterSpacing: '10px',
-              marginTop: '15px',
+              marginTop: window.innerWidth <= 768 ? '10px' : '15px', /* Conditional margin */
               color: '#2cff05',
               textTransform: 'uppercase',
               fontWeight: 'bold',
               textAlign: 'center',
-              position:'relative',
-              top:'3vw'
+              position: 'relative',
+              top: '3vw'
             }}
             className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
 
@@ -232,14 +233,17 @@ export default function Pages() {
               gap: '20px'
             }}
           >
-            {profiles.map((profile, index) => (
-              <ProfileCard
-                key={index}
-                name={profile.name}
-                role={profile.role}
-                profilePic={profile.profilePic}
-              />
-            ))}
+            <div className={styless.cardsContainer}>
+
+              {profiles.map((profile, index) => (
+                <ProfileCard
+                  key={index}
+                  name={profile.name}
+                  role={profile.role}
+                  profilePic={profile.profilePic}
+                />
+              ))}
+            </div>
             <button className={styles.registerBtn}
               onClick={() => navigate('/members')}
               style={{
@@ -253,7 +257,11 @@ export default function Pages() {
         </div>
 
         <div style={{
-          height: '70vh'
+          height: '100vh',
+          marginTop: '400px',
+          position: 'relative',
+          bottom: '200px'
+
         }} id="section5" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
 
           <Footer />
