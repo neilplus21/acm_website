@@ -30,11 +30,9 @@
   height: auto;
 }
 
-/* Club Name */
 .clubName {
   color: #fff;
   font-size: 1.4rem;
-  text-transform: uppercase;
   font-weight: bold;
   margin: 0;
   display: inline-block;

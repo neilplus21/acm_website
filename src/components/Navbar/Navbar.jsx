@@ -39,7 +39,7 @@ const Navbar = ({onNavigate}) => {
               src="/images/acm.png"
               alt="ACM Logo"
             />
-            <span className={styles.clubName}>ACM Chapter</span>
+            <span className={styles.clubName}>acm @NMAMIT</span>
           </div>
 
           {/* Mobile Toggle Button */}

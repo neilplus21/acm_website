@@ -71,7 +71,7 @@ export default function Pages() {
 
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
-    text: "Our EVENTS.. ",
+    text: " EVENTS",
     speed: 0.6,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
@@ -162,13 +162,13 @@ export default function Pages() {
           <HexagonParticles />
 
           <h1 style={{
-            lineHeight: '1'
+            lineHeight: '2'
           }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
           <h1 style={{
-            lineHeight: '1'
+            lineHeight: '2'
           }} ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
           <h1 style={{
-            lineHeight: '1'
+            lineHeight: '2'
           }} ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
           {/* 
           <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection}>Explore</button> */}
