@@ -36,7 +36,7 @@ const Navbar = ({onNavigate}) => {
           <div className={styles.logoContainer}>
             <img
               className={styles.logo}
-              src="/images/acm.png"
+              src="/images/acm_logo.png"
               alt="ACM Logo"
             />
             <span className={styles.clubName}>acm @NMAMIT</span>
@@ -59,7 +59,7 @@ const Navbar = ({onNavigate}) => {
           <ul className={styles.menu}>
           <img 
               className={styles.logo}
-              src="/images/acm.png"
+             src="/images/acm_logo.png"
               alt="ACM Logo"
             />
             <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
