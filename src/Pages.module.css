@@ -2,15 +2,22 @@
   font-family: myfont;
   src: url('/src/menseal-semibold-CqC6yNDC.ttf');
 }
-body{
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: black;
 }
+
 .pagesContainer {
   position: relative;
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
-  border: 1px solid black;
 }
 
 .pageSection {
@@ -19,41 +26,34 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 1vw;
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid black;
   padding: 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .pageSection h1 {
   color: #fff;
-  text-align: center;
   word-wrap: break-word;
-}
-
-.animate-text {
-  z-index: 10;
 }
 
 .section1 {
   background-color: rgb(0, 0, 0);
   font-size: 2.5vw;
+  text-align: center;
 }
 
 .explore {
-  position: relative;
-  top: 10%;
+  margin-top: 20px;
   padding: 10px 30px;
   border-radius: 10px;
   background-color: #00FF7F;
   color: #000000;
   cursor: pointer;
-  font-size: large;
+  font-size: 1rem;
   border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   animation: glow 1.5s infinite;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -62,60 +62,117 @@ body{
   background-color: #00b86b;
 }
 
-.section2 {
+.section2,
+.section3,
+.section4,
+.section5 {
   background-color: rgb(0, 0, 0);
-
+  padding: 20px;
 }
 
-.section3 {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  /* min-height: calc(100vh - 4vw); */
+.registerBtn {
+  background-color: #00FF7F;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
+.registerBtn:hover {
+  background-color: #00b86b;
+}
+
+.registerBtn1 {
+  background-color: #00FF7F;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.registerBtn1:hover {
+  background-color: #00b86b;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
 
-.section4 {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: row;
+.card {
+  flex: 1;
+  max-width: 250px;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: white;
 }
 
-/* Responsive Styles */
+.foo {
+  background-color: #ff3636;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 1200px) {
-  .section1 {
-    font-size: 3vw;
-  }
-
-  .pageSection h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section1 {
-    font-size: 4vw;
-  }
-
   .pageSection {
     padding: 15px;
-    gap: 2vw;
   }
 
-  .pageSection h1 {
-    font-size: 2rem;
+  .section1 h1 {
+    font-size: 2.5vw;
+  }
+
+  .section4 h1 {
+    font-size: 2.5vw;
+    margin-top: 10px !important;
+    padding-bottom: 80px;
+    position: relative;
+    bottom: 500px !important;
+
+  }
+  .registerBtn1 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    position: relative;
+  b: 100px !important;
+    right: 55% !important;
+  }
+  .cardsContainer {
+    gap: 15px;
+  }
+
+  .foo{
+    margin-top:50px !important;
+  }
+  .card {
+    max-width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .section1 h1 {
+    font-size: 7vw !important;
+    line-height: 15vw !important;
   }
 
   .section3 h1 {
-    font-size: 50px !important; /* Increased font size for mobile */
-    margin-top: 50px !important; /* Adjust spacing from the top */
+    font-size: 8vw !important;
+    text-align: center;
   }
 
-  .section3 button {
-    margin-top: 50px; 
-    height: 50px;/* Push button down on mobile */
-    width: 200px;
+  .section4 h1 {
+    font-size: 10vw !important;
+    text-align: center;
   }
 
   .explore {
@@ -123,98 +180,39 @@ body{
     font-size: medium;
   }
 
-  /* Adjust the team section */
-  .section3 div[style*="flex-direction: row"] {
-    flex-direction: column !important;
-    gap: 15px !important;
+  .cardsContainer {
+    flex-direction: column;
+  }
+  .foo{
+    margin-top:50px !important;
   }
 
-  /* Adjust upcoming events title */
-  .section3 h1[style*="font-size: 100px"] {
-    font-size: 40px !important;
-    letter-spacing: 5px !important;
+  .registerBtn1 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    position: relative;
+    top: 90vw !important;
+    right: 50%;
   }
 }
-.registerBtn {
-  background-color: #00FF7F; 
-  color: #000000;
-  border: none;
-  padding: 10px 40px;
-  border-radius: 10px; 
-  font-size: 16px;
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  animation: glow 1.5s infinite;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 @media screen and (max-width: 480px) {
-  .section1 {
+  .section1 h1,
+  .section3 h1 {
     font-size: 5vw;
   }
 
-  .pageSection {
-    padding: 10px;
-    gap: 3vw;
-  }
-
-  .pageSection h1 {
-    font-size: 1.5rem;
-  }
-
   .explore {
-    padding: 6px 20px;
+    padding: 5px 15px;
     font-size: small;
   }
 
-  /* Further reduce upcoming events title */
-  .section3 h1[style*="font-size: 100px"] {
-    font-size: 30px !important;
-    letter-spacing: 3px !important;
+  .registerBtn {
+    padding: 8px 15px;
+    font-size: 0.8rem;
   }
 
-  /* Adjust team section button */
-  .section3 button[style*="padding"] {
-    padding: 8px 20px !important;
+  .card {
+    max-width: 90%;
   }
-}
-
-/* Handle very small screens */
-@media screen and (max-width: 320px) {
-  .section1 {
-    font-size: 6vw;
-  }
-
-  .pageSection h1 {
-    font-size: 1.2rem;
-  }
-
-  .section3 h1[style*="font-size: 100px"] {
-    font-size: 24px !important;
-    letter-spacing: 2px !important;
-  }
-}
-
-/* Height-based media queries */
-@media screen and (max-height: 600px) {
-  .pageSection {
-    min-height: 120vh;
-  }
-
-  .section2 {
-    min-height: 110vh;
-  }
-}
-
-/* Add smooth scrolling for all screen sizes */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-.animatetext {
-
-  line-height: 1; 
 }

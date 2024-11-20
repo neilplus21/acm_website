@@ -71,7 +71,7 @@ export default function Pages() {
 
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
-    text: "UPCOMING EVENTS... ",
+    text: "Our EVENTS.. ",
     speed: 0.6,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
@@ -114,7 +114,7 @@ export default function Pages() {
     const scrollInstance = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      // smoothMobile: true,
+      smoothMobile: true,
     });
 
     scrollInstanceRef.current = scrollInstance;
@@ -183,32 +183,39 @@ export default function Pages() {
 
         {/* 3rd page upcoming evenets  */}
 
-        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+        <div  id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
           <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
             style={{
+              position:'relative',
+              top:'2.8vw',
               fontSize: '100px',
               letterSpacing: '10px',
               color: '#2cff05',
               textTransform: 'uppercase',
               fontWeight: 'bold',
-              margin: '20px 0',
+              marginBottom:'.5vw',
               textAlign: 'center',
             }}
-            data-scroll
-            data-scroll-speed="2"
+ data-scroll data-scroll-speed="2"
           >
-            Upcoming Events...
+            Our Events...
           </h1>
 
           <Events />
-          <button className={styles.registerBtn}>More</button>
+          <button style={
+          {
+            position:'relative',
+            top:'2vw'
+          }
+          
+          } className={styles.registerBtn} >More</button>
         </div>
 
 
 
         {/* core members */}
 
-        <div id='section4' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+        <div id='section4' className={styles.pageSection + ' ' + styles.section4} data-scroll-section>
           <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
             style={{
               fontSize: window.innerWidth <= 768 ? '60px' : '100px', /* Conditional font size */
@@ -233,6 +240,7 @@ export default function Pages() {
               gap: '20px'
             }}
           >
+
             <div className={styless.cardsContainer}>
 
               {profiles.map((profile, index) => (
@@ -244,7 +252,7 @@ export default function Pages() {
                 />
               ))}
             </div>
-            <button className={styles.registerBtn}
+            <button className={styles.registerBtn1}
               onClick={() => navigate('/members')}
               style={{
                 paddingTop: '10px',
@@ -257,14 +265,11 @@ export default function Pages() {
         </div>
 
         <div style={{
-          height: '100vh',
-          marginTop: '400px',
-          position: 'relative',
-          bottom: '200px'
+        backgroundColor:'black',
+        }} id="section5" className={styles.pageSection + ' ' + styles.foo} data-scroll-section>
 
-        }} id="section5" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-
-          <Footer />
+          <Footer  
+          />
         </div>
 
 

@@ -238,7 +238,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; /* Center align cards */
-  gap: 10px; 
+  gap: 2vw; 
 }
 
 .card {
@@ -335,5 +335,18 @@ body{
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+
+@media(max-width: 768px)
+{
+  .sectionHeading {
+    font-family: myfont;
+    font-size: 10vw;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Adjust heading color */
   }
 }

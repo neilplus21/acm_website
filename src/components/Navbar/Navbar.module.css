@@ -1,110 +1,132 @@
-/* Base Navbar Styling */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 30px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 1000;
-  height: 7vh;
+  background-color: #000;
+  z-index: 10;
+  padding: 10px 20px;
 }
 
+/* Navbar Content */
 .navbarContent {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo and Club Name Container */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 3vw; /* Default size for larger screens */
+  height: auto;
+}
+
+/* Club Name */
+.clubName {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Mobile Toggle Button */
+.menuToggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
   align-items: center;
 }
 
-.logo {
-  height: 40px;
-  filter: drop-shadow(0 0 10px #00ffcc);
+/* Mobile Menu */
+.mobileMenu {
+  margin-top: 3vw;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #000;
+  overflow-y: auto; /* Allow scrolling */
+  transition: right 0.3s ease-in-out;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-/* Desktop Menu (Visible on larger screens) */
-.desktopMenu {
-  display: flex;
-  gap: 40px;
+.mobileMenu.open {
+  right: 0; /* Slide-in effect */
+}
+
+/* Blur Overlay for Mobile Menu */
+.blurOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 8;
+}
+
+.blurOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu Items */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .menuItem {
-  font-size: 18px;
-  color: #fff;
-  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 1.2rem;
   font-weight: bold;
+  color: #fff;
   cursor: pointer;
-  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menuItem:hover {
-  color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  color: #00ffc6;
 }
 
-.menuToggle {
-  display: none; /* Display only in mobile view */
-  background-color: rgba(0, 255, 255, 0.2); /* Temporary background for visibility */
-  border: none;
-  color: #00ffcc;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 2000;
-  position: absolute;
-  top: 15px;
-  right: 20px;
+.noScroll {
+  overflow: hidden; 
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(26, 26, 26, 0.9);
-  z-index: 1500;
-}
-
-/* Menu inside Overlay */
-.overlay .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.overlay .menuItem {
-  font-size: 20px;
-  text-align: center;
-  padding: 15px 0;
-  transition: background 0.3s ease;
-}
-
-.overlay .menuItem:hover {
-  background: rgba(0, 206, 255, 0.7);
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  /* .navbar{
-    position: relative;
-    top: 100px
-  } */
-  .desktopMenu {
-    display: none;
+@media (max-width: 1024px) { /* Tablet view */
+  .logo {
+    width: 7vw; 
   }
+}
 
-  .menuToggle {
-    display: inline-block;
-    position: absolute;
-    top: 15px; /* Adjust to position correctly */
-    right: 20px;
-  }
-  .overlay {
-    display: flex;
+@media (max-width: 768px) { /* Mobile view */
+  .logo {
+    width: 10vw; 
   }
 }

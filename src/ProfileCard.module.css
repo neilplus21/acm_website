@@ -1,9 +1,10 @@
 .cardsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ensure uniform column width */
-  gap: 1rem; /* Space between cards */
+  display: flex;
   justify-content: center;
+  flex-direction: row;
+  gap: 1.5vw;
   margin-top: 2rem;
+
 }
 
 .card {
@@ -15,7 +16,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 300px;
-  height: 350px; /* Ensure uniform height */
+  height: 400px; /* Ensure uniform height */
   transition: transform 0.2s ease;
 }
 
@@ -64,29 +65,75 @@
   color: #ffffff;
   text-align: center;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
+@media(max-width:1200px)
+{
   .cardsContainer {
+    display: grid;
+    margin-top: -5vw !important;
+    text-align: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-left: 12vw;
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
   }
 
   .card {
-    max-width: 150px; /* Consistent width for all cards */
+    min-width: 35vw !important; 
     padding: 1rem;
-    height: auto;
+    height:auto;
   }
 
   .imageWrapper {
-    max-width: 110px;
+    max-width: 25vw !important;
   }
 
   .name {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
   }
 
   .title {
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
+  }
+
+  .content {
+    gap: 0.5rem;
+  }
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cardsContainer {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 4vw;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    margin-top: 15vw;
+    margin-left: 13%;
+  }
+
+  .card {
+    min-width: 200px;
+    width: 91vw; /* Consistent width for all cards */
+    padding: 1rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageWrapper {
+    max-width: 40vw !important;
+  }
+
+  .name {
+    font-size: 1.15rem !important;
+  }
+
+  .title {
+    font-size: 0.85rem !important;
   }
 
   .content {

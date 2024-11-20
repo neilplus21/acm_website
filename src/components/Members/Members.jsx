@@ -187,6 +187,20 @@ const membersData = [
     category: 'creative'
   },
   {
+    name: "Sharvan SP",
+    role: "Event Manager",
+    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Swasthi_rifmag.jpg',
+    profilePic: '/images/sp.jpg',
+    socialLinks: {
+      instagram: "https://instagram.com",
+      linkedin: "https://twitter.com",
+      github: "https://github.com"
+    },
+    category: 'operation'
+
+  },
+  {
     name: "Swasthi Shetty",
     role: "Event Head",
     about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
@@ -358,6 +372,7 @@ const Members = () => {
     if (members.length === 0) return null;
 
     return (
+      
       <section className={styles.groupSection} id={category}>
       <HexagonParticles />
         <h2 className={styles.sectionHeading}>{title}</h2>
