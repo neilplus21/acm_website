@@ -117,7 +117,7 @@
 
   .card {
     min-width: 200px;
-    width: 91vw; /* Consistent width for all cards */
+    width: 91vw; 
     padding: 1rem;
     height: auto;
     margin-left: auto;

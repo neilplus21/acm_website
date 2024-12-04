@@ -185,7 +185,8 @@
     flex-direction: column;
   }
   .foo{
-    margin-top:50px !important;
+    margin-top:0px !important;
+    padding-top: 20vw !important;
   }
 
   .registerBtn1 {
@@ -193,7 +194,7 @@
     font-size: 1rem;
     position: relative;
     top: 90vw !important;
-    right: 50%;
+    right: 50% !important;
   }
 }
 
