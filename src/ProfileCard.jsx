@@ -13,13 +13,13 @@ const ProfileCard = ({ name, role, profilePic }) => {
           />
         </div>
 
-        <h2 className={styles.name}>
+        <h2  className={styles.name}>
           {name}
         </h2>
-
+{/* 
         <span className={styles.title}>
           {role}
-        </span>
+        </span> */}
       </div>
     </div>
   );

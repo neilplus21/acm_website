@@ -9,9 +9,9 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: black;
-}
+} */
 
 .pagesContainer {
   position: relative;
@@ -38,11 +38,12 @@ body {
   color: #fff;
   word-wrap: break-word;
 }
-
 .section1 {
-  background-color: rgb(0, 0, 0);
-  font-size: 2.5vw;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;  /* Align text to the left and Vanta to the right */
+  align-items: center;  /* Vertically center content */
+  height: 100vh;  /* Full viewport height */
+  padding: 0 20px;  /* Add some padding to avoid text touching the edges */
 }
 
 .explore {

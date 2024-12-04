@@ -14,6 +14,9 @@ import { useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import HexagonParticles from '../src/HexagonParticles';
 import styless from './ProfileCard.module.css';
+import Aboutus from './components/Aboutus';
+import VantaGlobe from './VantaGlobe';
+import VantaRings from './VantaRings';
 //all profiles 
 
 const profiles = [
@@ -159,55 +162,59 @@ export default function Pages() {
 
         <div id='section1' className={styles.pageSection + ' ' + styles.section1}
           data-scroll-section ref={container}>
-          <HexagonParticles />
+          {/* <HexagonParticles /> */}
+          {/* <div>
+            <h1 style={{
+              lineHeight: '2'
+            }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
+            <h1 style={{
+              lineHeight: '2'
+            }} ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
+            <h1 style={{
+              lineHeight: '2'
+            }} ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
+          </div> */}
+          <VantaRings />
 
-          <h1 style={{
-            lineHeight: '2'
-          }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
-          <h1 style={{
-            lineHeight: '2'
-          }} ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
-          <h1 style={{
-            lineHeight: '2'
-          }} ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
-          {/* 
-          <button ref={buttonRef} className={styles.explore} onClick={handleScrollToSection}>Explore</button> */}
         </div>
+
+
 
         {/* second page about section  */}
         <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-          <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1>
-          <h1 className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1>
+          {/* <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1> */}
+          <Aboutus />
+          {/* <h1 className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1> */}
         </div>
 
 
         {/* 3rd page upcoming evenets  */}
 
-        <div  id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
           <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
             style={{
-              position:'relative',
-              top:'2.8vw',
+              position: 'relative',
+              top: '2.8vw',
               fontSize: '100px',
               letterSpacing: '10px',
               color: '#2cff05',
               textTransform: 'uppercase',
               fontWeight: 'bold',
-              marginBottom:'.5vw',
+              marginBottom: '.5vw',
               textAlign: 'center',
             }}
- data-scroll data-scroll-speed="2"
+            data-scroll data-scroll-speed="2"
           >
             Our Events...
           </h1>
 
           <Events />
           <button style={
-          {
-            position:'relative',
-            top:'2vw'
-          }
-          
+            {
+              position: 'relative',
+              top: '2vw'
+            }
+
           } className={styles.registerBtn} >More</button>
         </div>
 
@@ -265,10 +272,10 @@ export default function Pages() {
         </div>
 
         <div style={{
-        backgroundColor:'black',
+          backgroundColor: 'black',
         }} id="section5" className={styles.pageSection + ' ' + styles.foo} data-scroll-section>
 
-          <Footer  
+          <Footer
           />
         </div>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { FaBars, FaTimes, FaHome, FaInfoCircle, FaEnvelope, FaUsers, FaCalendarAlt } from "react-icons/fa";
 
+import i from './acm_logo.png'
 const Navbar = ({onNavigate}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -36,7 +37,7 @@ const Navbar = ({onNavigate}) => {
           <div className={styles.logoContainer}>
             <img
               className={styles.logo}
-              src="/images/acm_logo.png"
+              src={i}
               alt="ACM Logo"
             />
             <span className={styles.clubName}>acm @NMAMIT</span>
@@ -59,7 +60,7 @@ const Navbar = ({onNavigate}) => {
           <ul className={styles.menu}>
           <img 
               className={styles.logo}
-             src="/images/acm_logo.png"
+             src={i}
               alt="ACM Logo"
             />
             <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
