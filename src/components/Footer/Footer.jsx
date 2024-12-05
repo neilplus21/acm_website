@@ -13,9 +13,11 @@ const Footer = () => {
   const quickLinks = ['Home', 'About', 'Team', 'Events'];
 
   const socialLinks = [
+    { name: 'facebook', icon: faFacebookF, url: '#' },
     { name: 'linkedin', icon: faLinkedinIn, url: '#' },
     { name: 'instagram', icon: faInstagram, url: '#' },
     { name: 'github', icon: faGithub, url: '#' },
+    { name: 'twitter', icon: faTwitter, url: '#' }
   ];
 
   return (

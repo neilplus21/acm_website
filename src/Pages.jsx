@@ -23,7 +23,7 @@ const profiles = [
   {
     name: "Neil Mammen Prakash",
     role: "ChairPerson",
-    profilePic: '/images/neill.webp'
+    profilePic: '/images/nn.jpg'
   },
   {
     name: "Namratha M",
@@ -162,18 +162,7 @@ export default function Pages() {
 
         <div id='section1' className={styles.pageSection + ' ' + styles.section1}
           data-scroll-section ref={container}>
-          {/* <HexagonParticles /> */}
-          {/* <div>
-            <h1 style={{
-              lineHeight: '2'
-            }} ref={scrambleRef1} onMouseEnter={handleMouseEnter1} className="animate-text" data-scroll data-scroll-speed="1">Association for</h1>
-            <h1 style={{
-              lineHeight: '2'
-            }} ref={scrambleRef2} className="animate-text" onMouseEnter={handleMouseEnter2} data-scroll data-scroll-speed="1">Computing Machinery</h1>
-            <h1 style={{
-              lineHeight: '2'
-            }} ref={scrambleRef3} onMouseEnter={handleMouseEnter3} className="animate-text" data-scroll data-scroll-speed="1">@NMAMIT</h1>
-          </div> */}
+         
           <VantaRings />
 
         </div>
@@ -197,7 +186,7 @@ export default function Pages() {
               top: '2.8vw',
               fontSize: '100px',
               letterSpacing: '10px',
-              color: '#2cff05',
+              color: '#FFFFF0',
               textTransform: 'uppercase',
               fontWeight: 'bold',
               marginBottom: '.5vw',
@@ -225,10 +214,10 @@ export default function Pages() {
         <div id='section4' className={styles.pageSection + ' ' + styles.section4} data-scroll-section>
           <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
             style={{
-              fontSize: window.innerWidth <= 768 ? '60px' : '100px', /* Conditional font size */
+              fontSize: window.innerWidth <= 768 ? '60px' : '100px',
               letterSpacing: '10px',
-              marginTop: window.innerWidth <= 768 ? '10px' : '15px', /* Conditional margin */
-              color: '#2cff05',
+              marginTop: window.innerWidth <= 768 ? '10px' : '15px', 
+              color: '#FFFFF0',
               textTransform: 'uppercase',
               fontWeight: 'bold',
               textAlign: 'center',
@@ -259,7 +248,7 @@ export default function Pages() {
                 />
               ))}
             </div>
-            <button className={styles.registerBtn1}
+            <button className={styles.registerBtn}
               onClick={() => navigate('/members')}
               style={{
                 paddingTop: '10px',
