@@ -10,16 +10,12 @@ import {
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  const quickLinks = [
-    'Home', 'About', 'Team', 'Events'
-  ];
+  const quickLinks = ['Home', 'About', 'Team', 'Events'];
 
   const socialLinks = [
-    { name: 'facebook', icon: faFacebookF, url: '#' },
     { name: 'linkedin', icon: faLinkedinIn, url: '#' },
     { name: 'instagram', icon: faInstagram, url: '#' },
     { name: 'github', icon: faGithub, url: '#' },
-    { name: 'twitter', icon: faTwitter, url: '#' }
   ];
 
   return (
@@ -29,9 +25,9 @@ const Footer = () => {
         <header className={styles.header}>
           <div className={styles.logoContainer}>
             <img 
-              src="/images/acm.png"
+              src="/images/acm.png" 
               alt="ACM Logo" 
-              className={styles.logo}
+              className={styles.logo} 
             />
             <div className={styles.mainhead}>
               <div className={styles.title}>Association for</div>
@@ -67,7 +63,6 @@ const Footer = () => {
             <div className={styles.contactInfo}>
               <h2 className={styles.sectionTitle}>Contact Us</h2>
               <div className={styles.infoItem}>
-              
                 <span>NMAMIT</span>
               </div>
               <div className={styles.infoItem}>
@@ -90,6 +85,21 @@ const Footer = () => {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Google Maps Section */}
+          <div className={styles.mapSection}>
+            <h2 className={styles.sectionTitle}>Find Us</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.6730533394875!2d74.93141407508013!3d13.18300258715209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb56415ad85e5b%3A0x10b77ac6f6afc7fa!2sN.M.A.M.%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1733416769802!5m2!1sen!2sin"
+              width="400"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className={styles.map}
+            ></iframe>
           </div>
         </div>
       </div>

@@ -308,3 +308,13 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.mapSection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.map {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
