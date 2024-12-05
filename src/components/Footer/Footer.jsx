@@ -19,7 +19,6 @@ const Footer = () => {
     { name: 'linkedin', icon: faLinkedinIn, url: '#' },
     { name: 'instagram', icon: faInstagram, url: '#' },
     { name: 'github', icon: faGithub, url: '#' },
-    { name: 'twitter', icon: faTwitter, url: '#' }
   ];
 
   return (
@@ -28,11 +27,11 @@ const Footer = () => {
         {/* Header Section */}
         <header className={styles.header}>
           <div className={styles.logoContainer}>
-            <img 
+            {/* <img 
               src="/images/acm.png"
               alt="ACM Logo" 
               className={styles.logo}
-            />
+            /> */}
             <div className={styles.mainhead}>
               <div className={styles.title}>Association for</div>
               <div className={styles.title}>Computing Machinery</div>

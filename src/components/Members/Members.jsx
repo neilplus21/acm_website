@@ -13,7 +13,7 @@ const membersData = [
     role: "ChairPerson",
     about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg',
-    profilePic: '/images/neill.webp',
+    profilePic: '/images/nn.jpg',
     socialLinks: {
       instagram: "https://instagram.com",
       linkedin: "https://twitter.com",
