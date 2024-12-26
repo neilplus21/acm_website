@@ -73,16 +73,16 @@
 .registerBtn {
   background-color: #000000; 
   color: #FFFFFF; 
-  padding: 15px 80px; 
+  padding: 15px 20px;
   font-size: 1rem; 
   font-family: myfont; 
-  
   border: 2px solid #FFFFFF; 
   border-radius: 8px; 
   text-align: center; 
   cursor: pointer; 
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); 
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; 
+
 }
 
 .registerBtn:hover {
@@ -92,6 +92,27 @@
   border-color: #FFFFFF;
 }
 
+.more{
+  background-color: #000000; 
+  color: #FFFFFF; 
+  padding: 15px 20px;
+  font-size: 1rem; 
+  font-family: myfont; 
+  border: 2px solid #FFFFFF; 
+  border-radius: 8px; 
+  text-align: center; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); 
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; 
+
+  
+}
+.more:hover{
+  background-color: #FFFFFF; 
+  color: #000000; 
+  transform: scale(1.05); 
+  border-color: #FFFFFF;
+}
 
 .registerBtn1 {
   background-color: #000000; 
@@ -119,6 +140,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
 }
 
 .card {
@@ -199,6 +221,11 @@
 
   .cardsContainer {
     flex-direction: column;
+  }
+  .more{
+    margin-top: 5px;
+    position: relative;
+    left: 50%;
   }
   .foo{
     margin-top:0px !important;

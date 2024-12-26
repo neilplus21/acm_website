@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 6vw;
-  flex: 1 0 auto; /* Added for full-page height */
+  flex: 1 0 auto;
 }
 
 /* Wrapper */
@@ -19,7 +19,6 @@
   position: relative;
 }
 
-/* Header Section */
 .header {
   position: absolute;
   top: -120px;
@@ -27,7 +26,7 @@
   text-align: left;
 }
 
-.logoContainer {
+/* .logoContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,44 +36,52 @@
 .logo {
   width: 3rem;
   height: 3rem;
-}
+} */
 
 .title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .subtitle {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /* Main Grid */
 .mainGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-top: 3rem;
+  align-items: start; 
 }
 
-/* About Section */
-.aboutText {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  text-align: justify;
+.aboutSection {
+  text-align: center;
+  width: 100%;
+}
+.sectionTitle{
+  padding: 10px;
+  font-size: 2.2rem;
 }
 
-/* Section Title */
-.sectionTitle {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.mapSectionIframe {
+  display: block;
+  margin: 0 auto; 
+  width: 700px !important; 
+  height: 300px !important;
+  max-width: 100%; 
+  border-radius: 15px;
+  border: none;
 }
 
-/* Quick Links */
+
 .linksNav {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 1rem;
+  
 }
 
 .linkItem {
@@ -92,17 +99,9 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Contact Section */
-.contactSection {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
 
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.contactSection {
+  text-align: center;
 }
 
 .contactInfo a {
@@ -114,7 +113,7 @@
 .socialLinks {
   display: flex;
   gap: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 0.5rem;
 }
 
@@ -141,7 +140,7 @@
   height: 1.25rem;
 }
 
-/* Footer Section */
+
 .footer {
   background-color: black;
   color: white;
@@ -156,165 +155,16 @@
   font-size: 0.875rem;
 }
 
-/* Desktop Styles */
-@media (min-width: 768px) {
-  .container {
-    padding: 2rem;
-  }
-
-  .mainGrid {
-    grid-template-columns: repeat(3, 1fr);
-    text-align: left;
-  }
-
-  .contactSection {
-    align-items: flex-start;
-  }
-}
-
-/* Mobile Styles */
 @media (max-width: 768px) {
-  .container {
-    padding: 1.5rem;
-    margin-top: 4vw;
-  }
-
-  .wrapper {
-    padding: 0 1rem;
-  }
-
-  .header {
-    position: static;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .logoContainer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .title {
-    font-size: 2.3rem;
-    text-align: center;
-  }
-
-  .subtitle {
-    font-size: 1.21rem;
-    text-align: center;
-  }
-
   .mainGrid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .aboutText {
-    text-align: center;
-    font-size: 0.975rem;
-  }
-
-  .sectionTitle {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: -40px;
-    /* margin-bottom: 0.75rem; */
-  }
-
-  .linksNav {
-    align-items: center;
-  }
-
-  .contactSection {
-    align-items: center;
-    text-align: center;
-  }
-
-  .contactInfo {
-    align-items: center;
-    text-align: center;
   }
 
   .socialLinks {
     justify-content: center;
     flex-wrap: wrap;
   }
-
-  .socialLink {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-
-  .socialIcon {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  /* Adjust spacing between sections */
-  .mainGrid > div {
-    margin-bottom: 2rem;
-  }
-
-  .mainGrid > div:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Specific mobile spacing for contact section */
-  .contactSection > .sectionTitle {
-    margin-bottom: 0.5rem;
-  }
-
-  .contactInfo {
-    margin-bottom: 1.5rem;
-  }
-
-  .contactInfo > div {
-    margin-bottom: 0.25rem;
+  .mapSection iframe {
+    height: 300px; 
   }
 }
-
-/* Small Mobile Styles */
-@media (max-width: 375px) {
-  .container {
-    padding: 1rem;
-  }
-
-  .wrapper {
-    padding: 0 0.5rem;
-  }
-
-  .socialLink {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .socialIcon {
-    width: 0.875rem;
-    height: 0.875rem;
-  }
-}
-
-/* Ensure body and html use full height */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-.mapSection {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.map {
-  max-width: 100%;
-  border-radius: 8px;
-}
-

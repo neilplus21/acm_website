@@ -74,7 +74,7 @@ export default function Pages() {
 
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
-    text: " EVENTS",
+    text: "EVENTS (Soon)",
     speed: 0.6,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
@@ -162,7 +162,7 @@ export default function Pages() {
 
         <div id='section1' className={styles.pageSection + ' ' + styles.section1}
           data-scroll-section ref={container}>
-         
+
           <VantaRings />
 
         </div>
@@ -194,17 +194,18 @@ export default function Pages() {
             }}
             data-scroll data-scroll-speed="2"
           >
-            Our Events...
+            ..
           </h1>
-
-          <Events />
-          <button style={
+{/* 
+          <Events /> */}
+          {/* <button style={
             {
               position: 'relative',
               top: '2vw'
             }
 
-          } className={styles.registerBtn} >More</button>
+          } className={styles.registerBtn} >More</button> */}
+       
         </div>
 
 
@@ -216,7 +217,7 @@ export default function Pages() {
             style={{
               fontSize: window.innerWidth <= 768 ? '60px' : '100px',
               letterSpacing: '10px',
-              marginTop: window.innerWidth <= 768 ? '10px' : '15px', 
+              marginTop: window.innerWidth <= 768 ? '10px' : '15px',
               color: '#FFFFF0',
               textTransform: 'uppercase',
               fontWeight: 'bold',
@@ -247,17 +248,14 @@ export default function Pages() {
                   profilePic={profile.profilePic}
                 />
               ))}
+              <button className={styles.more}
+                onClick={() => navigate('/members')}
+                style={{
+                  textAlign: 'center'
+                }}>More</button>
             </div>
-            <button className={styles.registerBtn}
-              onClick={() => navigate('/members')}
-              style={{
-                paddingTop: '10px',
-                paddingBottom: '10px',
-                paddingLeft: '30px',
-                paddingRight: '30px',
-                textAlign: 'center'
-              }}>More</button>
           </div>
+
         </div>
 
         <div style={{

@@ -10,7 +10,7 @@ const Navbar = ({onNavigate}) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Prevent body scrolling when menu is open
+ 
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add(styles.noScroll);
@@ -58,11 +58,7 @@ const Navbar = ({onNavigate}) => {
           className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""}`}
         >
           <ul className={styles.menu}>
-          <img 
-              className={styles.logo}
-             src={i}
-              alt="ACM Logo"
-            />
+          
             <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
             <li className={styles.menuItem} onClick={() => { onNavigate('#section2'); toggleMenu(); }}> <FaInfoCircle size={20} color="#fff" /> About</li>
             <li className={styles.menuItem} onClick={() => { onNavigate('#section3'); toggleMenu(); }}><FaCalendarAlt size={20} color="#fff" /> Events </li>
