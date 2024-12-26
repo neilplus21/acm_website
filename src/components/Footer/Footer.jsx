@@ -1,25 +1,23 @@
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFacebookF,
   faLinkedinIn,
   faInstagram,
-  faGithub,
-  faTwitter
+  faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  const quickLinks = ['Home', 'About', 'Team', 'Events'];
-
   const socialLinks = [
-    { name: 'linkedin', icon: faLinkedinIn, url: '#' },
+    { name: 'linkedin', icon: faLinkedinIn, url: 'https://www.linkedin.com/company/acm-nmamit/' },
     { name: 'instagram', icon: faInstagram, url: '#' },
-    { name: 'github', icon: faGithub, url: '#' },
+    { name: 'github', icon: faGithub, url: 'https://github.com/neilplus21/acm_website' },
   ];
 
   return (
-    <div className={styles.container}>
+    <>
+     <div className={styles.container}>
       <div className={styles.wrapper}>
         {/* Header Section */}
         <header className={styles.header}>
@@ -46,18 +44,7 @@ const Footer = () => {
             ></iframe>
           </div>
 
-          {/* Quick Links Section */}
-          <div className={styles.quickLinks}>
-            <h2 className={styles.sectionTitle}>Quick Links</h2>
-            <nav className={styles.linksNav}>
-              {quickLinks.map((link) => (
-                <div key={link} className={styles.linkItem}>
-                  <a href="#" className={styles.link}>{link}</a>
-                </div>
-              ))}
-            </nav>
-          </div>
-
+          {/* Contact Section */}
           <div className={styles.contactSection}>
             <h2 className={styles.sectionTitle}>Contact Us</h2>
             <div className={styles.contactInfo}>
@@ -78,9 +65,19 @@ const Footer = () => {
             </div>
           </div>
 
+
         </div>
       </div>
+ 
+
     </div>
+    <div className={styles.footerBottom}>
+  NMAMIT ACM STUDENT CHAPTER | All Rights Reserved
+</div>
+
+
+    </>
+   
   );
 };
 

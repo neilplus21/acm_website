@@ -26,18 +26,6 @@
   text-align: left;
 }
 
-/* .logoContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo {
-  width: 3rem;
-  height: 3rem;
-} */
-
 .title {
   font-weight: bold;
   font-size: 2rem;
@@ -47,30 +35,30 @@
   font-size: 1rem;
 }
 
-/* Main Grid */
 .mainGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr ; /* Update to allow three columns, making room for the map */
+  gap: 3rem;
   margin-top: 3rem;
-  align-items: start; 
+  align-items: start;
 }
 
 .aboutSection {
   text-align: center;
   width: 100%;
 }
-.sectionTitle{
+
+.sectionTitle {
   padding: 10px;
   font-size: 2.2rem;
 }
 
 .mapSectionIframe {
   display: block;
-  margin: 0 auto; 
-  width: 700px !important; 
-  height: 300px !important;
-  max-width: 100%; 
+  margin: 0 auto;
+  width: 50vw; 
+  height: 350px !important;
+  max-width: 100%;
   border-radius: 15px;
   border: none;
 }
@@ -81,7 +69,6 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
-  
 }
 
 .linkItem {
@@ -99,10 +86,10 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-
 .contactSection {
   text-align: center;
-}
+  margin-top: 18%;
+  }
 
 .contactInfo a {
   color: white;
@@ -127,7 +114,7 @@
   justify-content: center;
   text-decoration: none;
   transition: all 0.2s ease;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .socialLink:hover {
@@ -139,7 +126,6 @@
   width: 1.25rem;
   height: 1.25rem;
 }
-
 
 .footer {
   background-color: black;
@@ -155,7 +141,19 @@
   font-size: 0.875rem;
 }
 
+.footerBottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #6c757d; 
+  width: 80%;
+  border-top: 1px solid #e9ecef; 
+}
+
+
 @media (max-width: 768px) {
+
   .mainGrid {
     grid-template-columns: 1fr;
   }
@@ -164,7 +162,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .mapSection iframe {
+
+  .mapSectionIframe {
+    margin-top: 1vw;
     height: 300px; 
+    width: max-content;
   }
 }
