@@ -38,7 +38,7 @@ const Navbar = ({onNavigate}) => {
             <img
               className={styles.logo}
               src={i}
-              alt="ACM Logo"
+              alt="ACM Logo"  
             />
             <span className={styles.clubName}>acm @NMAMIT</span>
           </div>
@@ -49,7 +49,7 @@ const Navbar = ({onNavigate}) => {
             onClick={toggleMenu}
             aria-label="Menu Toggle"
           >
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
+            {isMenuOpen ? <FaTimes /> : <FaBars />} 
           </button>
         </div>
 
@@ -59,12 +59,18 @@ const Navbar = ({onNavigate}) => {
         >
           <ul className={styles.menu}>
           
-            <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
+            {/* <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
             <li className={styles.menuItem} onClick={() => { onNavigate('#section2'); toggleMenu(); }}> <FaInfoCircle size={20} color="#fff" /> About</li>
             <li className={styles.menuItem} onClick={() => { onNavigate('#section3'); toggleMenu(); }}><FaCalendarAlt size={20} color="#fff" /> Events </li>
             <li className={styles.menuItem} onClick={() => { onNavigate('#section4'); toggleMenu(); }}>  <FaUsers size={20} color="#fff" /> Team</li>
-            <li className={styles.menuItem}  onClick={() => { onNavigate('#section5'); toggleMenu(); }} >  <FaEnvelope size={20} color="#fff" /> Contact Us</li>
+            <li className={styles.menuItem}  onClick={() => { onNavigate('#section5'); toggleMenu(); }} >  <FaEnvelope size={20} color="#fff" /> Contact Us</li> */}
           
+          
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section1'); toggleMenu(); }}>Home</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section2'); toggleMenu(); }}>About</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section3'); toggleMenu(); }}>Events</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section4'); toggleMenu(); }}>Team</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section5'); toggleMenu(); }}>Contact Us</li>
           </ul>
         </div>
       </nav>
