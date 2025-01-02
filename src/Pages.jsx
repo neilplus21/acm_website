@@ -75,7 +75,7 @@ export default function Pages() {
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
     text: "EVENTS",
-    speed: 0.6,
+    speed: 0.4,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
     text: "Our Team ",
@@ -179,11 +179,14 @@ export default function Pages() {
 
         {/* 3rd page upcoming evenets  */}
 
-        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+        <div id='section3' style={{
+            // background:"white"
+      
+        }}  className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
           <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
             style={{
               position: 'relative',
-              top: '2.8vw',
+              top: '3.8vw',
               fontSize: '100px',
               letterSpacing: '10px',
               color: '#FFFFF0',
@@ -192,11 +195,16 @@ export default function Pages() {
               marginBottom: '.5vw',
               textAlign: 'center',
             }}
-            data-scroll data-scroll-speed="2"
+            data-scroll data-scroll-speed="1"
           >
-            ..
           </h1>
-          {<Events /> }
+          <div style={{
+            marginTop:'50px',
+          }}>
+          <Events /> 
+
+          </div>
+     
           {/*<button style={
             {
               position: 'relative',

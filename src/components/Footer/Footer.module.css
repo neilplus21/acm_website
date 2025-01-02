@@ -1,6 +1,6 @@
 /* General Container */
 .container {
-  min-height: 60vh;
+  min-height: 80vh;
   background-color: black;
   color: white;
   padding: 2rem 1rem;
@@ -143,7 +143,7 @@
 
 .footerBottom {
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: rem; */
   padding: 1rem 0;
   font-size: 0.9rem;
   color: #6c757d; 
@@ -154,6 +154,27 @@
 
 @media (max-width: 768px) {
 
+.mainhead{
+  margin-top: 15vw;
+  padding-bottom: 2vw;
+  text-align: center;
+}
+
+  .container {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: vw;
+    flex: 1 0 auto;
+  }
+  
+  .aboutSection{
+    margin-top: 18vw;
+  }
   .mainGrid {
     grid-template-columns: 1fr;
   }
@@ -167,5 +188,14 @@
     margin-top: 1vw;
     height: 300px; 
     width: max-content;
+  }
+  .footerBottom{
+    text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #b0a8a8; 
+  width: 100%;
+  border-top: 1px solid #e9ecef; 
   }
 }

@@ -242,8 +242,8 @@ body{
 }
 
 .card {
-  width: 350px; /* Fixed width for card */
-  height: 400px; /* Adjusted height */
+  width: 300px; /* Fixed width for card */
+  height: 320px; /* Adjusted height */
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
