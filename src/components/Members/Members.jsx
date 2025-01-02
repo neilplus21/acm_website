@@ -10,22 +10,22 @@ import HexagonParticles from '../../HexagonParticles';
 const membersData = [
   {
     name: "Neil",
-    role: "ChairPerson",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    role: "Chairperson",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg',
     profilePic: '/images/nn.jpg',
     socialLinks: {
-      instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
-      github: "https://github.com"
+      instagram: "https://instagram.com/neilmp21",
+      linkedin: "https://www.linkedin.com/in/neil-mammen-prakash/",
+      github: "https://github.com/neilplus21"
     },
     category: 'officeBearer'
 
   },
   {
     name: "Namratha",
-    role: "Vice ChairPerson ",
-    about: "Creating seamless user experiences and elegant design solutions.",
+    role: "Vice Chairperson ",
+    //about: "Creating seamless user experiences and elegant design solutions.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg',
     profilePic: '/images/nam.webp',
     socialLinks: {
@@ -38,7 +38,7 @@ const membersData = [
   {
     name: "Rashmitha R Bangera",
     role: "Treasurer",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg',
     profilePic: '/images/Rashmitha.webp',
     socialLinks: {
@@ -51,8 +51,8 @@ const membersData = [
   },
   {
     name: "Kushagr Sharma",
-    role: "Web Master",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    role: "Webmaster",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729365119/kush_wsph8a.jpg',
     profilePic: '/images/kkk.jpg',
     socialLinks: {
@@ -67,7 +67,7 @@ const membersData = [
   {
     name: "Sannidhi S Shetty",
     role: "Secretary",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355969/sannidhi_zfmnb7.jpg',
     profilePic: '/images/sannidhi.webp',
     socialLinks: {
@@ -81,7 +81,7 @@ const membersData = [
   {
     name: "Sujal Sunil Badde",
     role: "Vice Secretary",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/Sujal_eo3zte.jpg',
     profilePic: '/images/Sujal.webp',
     socialLinks: {
@@ -95,7 +95,7 @@ const membersData = [
   {
     name: "Shaldon Barnes",
     role: " Co Web Master",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729365279/IMG_3364_posa3d.jpg',
     profilePic: '/images/sheldon.jpg',
     socialLinks: {
@@ -109,7 +109,7 @@ const membersData = [
   {
     name: "Eshaan",
     role: "Graphic Designer",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/eeshan_gs5roq.jpg',
     profilePic: '/images/eeshan.webp',
     socialLinks: {
@@ -122,7 +122,7 @@ const membersData = [
   {
     name: "Sarang Sudheer",
     role: "Graphic Designer",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Sarang_pxzxmq.jpg',
     profilePic: '/images/sarang.webp',
     socialLinks: {
@@ -136,7 +136,7 @@ const membersData = [
   {
     name: "Prateeksha",
     role: "Graphic Designer",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355970/prat_rtrvao.jpg',
     profilePic: '/images/prat.webp',
     socialLinks: {
@@ -149,7 +149,7 @@ const membersData = [
   {
     name: "Aakash",
     role: "Photography Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355949/Aakash_brjcge.png',
     profilePic: '/images/Aakash.webp',
     socialLinks: {
@@ -163,7 +163,7 @@ const membersData = [
   {
     name: "N Ajay G Kamath",
     role: "Photography Co-Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355982/ajay_h14ovt.jpg',
     profilePic: '/images/ajay.webp',
     socialLinks: {
@@ -176,7 +176,7 @@ const membersData = [
   {
     name: "V Mithun Mallya",
     role: "Photography Co-Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355968/MITHUN_ad27z6.jpg',
     profilePic: '/images/MITHUN.webp',
     socialLinks: {
@@ -189,7 +189,7 @@ const membersData = [
   {
     name: "Sharvan SP",
     role: "Event Manager",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Swasthi_rifmag.jpg',
     profilePic: '/images/sp.jpg',
     socialLinks: {
@@ -203,7 +203,7 @@ const membersData = [
   {
     name: "Swasthi Shetty",
     role: "Event Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Swasthi_rifmag.jpg',
     profilePic: '/images/Swasthi.webp',
     socialLinks: {
@@ -218,7 +218,7 @@ const membersData = [
   {
     name: "Anagha",
     role: "Event Co-Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/anagha_o9u31e.jpg',
     profilePic: '/images/anagha.webp',
     socialLinks: {
@@ -234,7 +234,7 @@ const membersData = [
   {
     name: "Harshita Hegde",
     role: "Publicity Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355982/harshita_urqgeh.jpg',
     profilePic: '/images/harshita.webp',
     socialLinks: {
@@ -249,7 +249,7 @@ const membersData = [
   {
     name: "Gokul Anil",
     role: "Co-Publicity Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355972/gokul_uhudfi.jpg',
     profilePic: '/images/gokul.webp',
     socialLinks: {
@@ -264,7 +264,7 @@ const membersData = [
   {
     name: "V Sreelasya",
     role: "Social Media Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/lasya_sbsa0g.jpg',
     profilePic: '/images/laasya.webp',
     socialLinks: {
@@ -279,7 +279,7 @@ const membersData = [
   {
     name: "Thanmayi",
     role: "Social Media  Co-Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355965/Thanmayi_se0j7k.jpg',
     profilePic: '/images/Thanmayi.webp',
     socialLinks: {
@@ -294,7 +294,7 @@ const membersData = [
   {
     name: "Diya M Shetty",
     role: "Documentation Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355968/diya_cnbahk.jpg',
     profilePic: '/images/diya.webp',
     socialLinks: {
@@ -309,7 +309,7 @@ const membersData = [
   {
     name: "Dhruva Shedbalkar",
     role: "Documentation Co-Head",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355983/dhruva_x4kbcj.jpg',
     profilePic: '/images/dhruva.webp',
     socialLinks: {
@@ -324,7 +324,7 @@ const membersData = [
   {
     name: "Shawn",
     role: "3rd Year Representative",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355945/shawn_ov7ou9.png',
     profilePic: '/images/shawn.webp',
     socialLinks: {
@@ -339,7 +339,7 @@ const membersData = [
   {
     name: "Susan Riona D'souza",
     role: "Second Year Representative",
-    about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
+    //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355969/Susan_xvahk6.jpg',
     profilePic: '/images/susan.webp',
     socialLinks: {

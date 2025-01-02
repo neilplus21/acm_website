@@ -74,7 +74,7 @@ export default function Pages() {
 
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
-    text: "EVENTS (Soon)",
+    text: "EVENTS",
     speed: 0.6,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
@@ -196,9 +196,8 @@ export default function Pages() {
           >
             ..
           </h1>
-{/* 
-          <Events /> */}
-          {/* <button style={
+          {<Events /> }
+          {/*<button style={
             {
               position: 'relative',
               top: '2vw'

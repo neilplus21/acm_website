@@ -72,7 +72,7 @@ const Footer = () => {
 
     </div>
     <div className={styles.footerBottom}>
-  NMAMIT ACM STUDENT CHAPTER | All Rights Reserved
+    © 2025 NMAMIT ACM Student Chapter. All rights reserved.
 </div>
 
 
