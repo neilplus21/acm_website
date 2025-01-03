@@ -13,18 +13,18 @@ const Events = () => {
           <div className="event-card__circle"></div>
         </div>
         <div className="event-card__header">
-          <div className="event-card__date">01/01/2023</div>
-          <div className="event-card__title">NEW YEAR EVENT</div>
+          <div className="event-card__date">tba</div>
+          <div className="event-card__title">The Great Code Auction</div>
         </div>
         <img src={eventImage} alt="Event" className="event-card__image" />
         <div className="event-card__details">
           <div className="event-card__description">
-            Celebrate the start of the new year with excitement and joy! Fun-filled activities await you.
+            The Great Code Auction
           </div>
           <div className="event-card__info">
-            <div className="event-card__location">📍 Central Park, NYC</div>
-            <div className="event-card__team-size">👥 Team Size: 4-6 Members</div>
-            <div className="event-card__photography">📸 Photography Spot Available</div>
+            <div className="event-card__location">📍 TBA</div>
+            <div className="event-card__team-size">👥 Team Size: 2-3 Members</div>
+            <div className="event-card__photography">📸 spots available</div>
           </div>
           <div className="event-card__actions">
             <a className="event-card__button event-card__button--register" href="#">Join Party!</a>
