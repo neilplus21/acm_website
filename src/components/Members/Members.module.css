@@ -12,7 +12,7 @@ body{
 .membersContainer {
   margin-top: 4vw;
   background-color: #000000;
-  height: 543vh;
+  height: 525vh;
 }
 
 .groupSection {
@@ -185,6 +185,8 @@ body{
    .social {
     gap: 25px;
   }
+
+
 
   
 }
