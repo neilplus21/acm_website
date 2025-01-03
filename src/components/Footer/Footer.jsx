@@ -17,6 +17,7 @@ const Footer = () => {
 
   return (
     <>
+      <div className={styles.bigcontainer}>
         <div className={styles.container}>
           <div className={styles.wrapper}>
             {/* Header Section */}
@@ -74,6 +75,10 @@ const Footer = () => {
         <div className={styles.footerBottom}>
           © 2025 NMAMIT ACM Student Chapter. All rights reserved.
         </div>
+
+      </div>
+
+
     </>
 
   );

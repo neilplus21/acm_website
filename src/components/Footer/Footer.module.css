@@ -7,13 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 6vw;
   flex: 1 0 auto;
 }
 
-/* .bigcontainer{
+.bigcontainer{
   height: 100vh;
-} */
+  padding-top: 5vw;
+}
 
 /* Wrapper */
 .wrapper {
@@ -199,7 +199,6 @@
 
   .footerBottom {
     text-align: center;
-    margin-top: 2rem;
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #b0a8a8;

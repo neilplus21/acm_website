@@ -156,7 +156,7 @@
 }
 
 .foo {
-  height: 80vh;
+  height: 100vh;
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
@@ -228,8 +228,9 @@
     left: 50%;
   }
   .foo{
-    margin-top:0px !important;
-    padding-top: 20vw !important;
+    height: 125vh !important;
+    margin-top:1vw !important;
+    padding-top: 1vw !important;
   }
 
   .registerBtn1 {
