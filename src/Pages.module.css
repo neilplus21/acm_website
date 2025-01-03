@@ -143,8 +143,6 @@
 
 }
 
-
-
 .card {
   flex: 1;
   max-width: 250px;
@@ -155,10 +153,8 @@
   color: white;
 }
 
-.foo {
-  height: 100vh;
-  text-align: center;
-}
+
+
 @media screen and (max-width: 1200px) {
   .pageSection {
     padding: 15px;
@@ -176,25 +172,19 @@
     bottom: 500px !important;
 
   }
-  /* .registerBtn1 {
-    padding: 10px 20px;
-    font-size: 1rem;
-    position: relative;
-    right: 55% !important;
-  } */
-
+.foo{
+  min-height: 120vh;
+  background-color: #fff;
+}
 
   
-  .cardsContainer {
+  /* .cardsContainer {
     gap: 15px;
   }
 
-  .foo{
-    margin-top:50px !important;
-  }
   .card {
     max-width: 200px;
-  }
+  } */
 }
 
 
@@ -228,7 +218,6 @@
     left: 50%;
   }
   .foo{
-    height: 145vh !important;
     margin-top:0vw !important;
     padding-top: 0vw !important;
   }

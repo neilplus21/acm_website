@@ -259,7 +259,7 @@ export default function Pages() {
 
         <div style={{
           backgroundColor: 'black',
-        }} id="section5" className={styles.pageSection + ' ' + styles.foo} data-scroll-section>
+        }} id="section5" className={styles.foo} data-scroll-section>
 
           <Footer/>
         </div>

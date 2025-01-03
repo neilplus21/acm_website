@@ -1,6 +1,6 @@
 /* General Container */
 .container {
-  min-height: 75vh;
+  min-height: 83.8vh;
   background-color: black;
   color: white;
   padding: 2rem 1rem;
@@ -195,6 +195,9 @@
     margin-top: 1vw;
     height: 300px;
     width: max-content;
+  }
+  .contactSection{
+    margin-top: -1vw;
   }
 
   .footerBottom {
