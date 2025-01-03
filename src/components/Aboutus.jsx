@@ -13,7 +13,7 @@ function Aboutus() {
                     By fostering an environment of creativity and knowledge-sharing, we strive to prepare students for a future of excellence in technology and leadership. Join us to unlock exciting opportunities, elevate your skills, and be part of a thriving network shaping tomorrow’s tech landscape.
                 </p>
                 <button className="read-more-btn">
-                    <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.acm.org/about-acm" target="_blank" rel="noopener noreferrer">
                         Read More
                     </a>
                 </button>
