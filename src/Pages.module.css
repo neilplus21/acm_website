@@ -143,6 +143,8 @@
 
 }
 
+
+
 .card {
   flex: 1;
   max-width: 250px;
@@ -154,12 +156,9 @@
 }
 
 .foo {
-  background-color: #ff3636;
-  padding: 20px;
+  height: 80vh;
   text-align: center;
 }
-
-/* Responsive Design */
 @media screen and (max-width: 1200px) {
   .pageSection {
     padding: 15px;
@@ -183,6 +182,7 @@
     position: relative;
     right: 55% !important;
   } */
+
 
   
   .cardsContainer {

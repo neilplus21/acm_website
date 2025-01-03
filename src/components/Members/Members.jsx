@@ -412,15 +412,18 @@ const Members = () => {
 
   return (
     <>
-
+    
       <div id="scroll-container" className={styles.membersContainer}>
         <div className={styles.info}>
           {renderMemberGroup('officeBearer', 'Executive')}
           {renderMemberGroup('creative', 'Creative')}
           {renderMemberGroup('operation', 'Operations')}
         </div>
-      <Footer />
+      <Footer  />
       </div>
+
+
+    
 
     </>
 
