@@ -270,7 +270,8 @@ export default function Pages() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              paddingTop:"50px"
+              paddingTop:"50px",
+                backgroundColor:"black"
             }}
             data-scroll-section
           >
