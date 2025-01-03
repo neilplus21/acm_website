@@ -253,7 +253,8 @@ export default function Pages() {
                 <button className={styles.more}
                   onClick={() => navigate('/members')}
                   style={{
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    cursor:'pointer'
                   }}>More</button>
               </div>
             </div>
@@ -277,10 +278,11 @@ export default function Pages() {
 
           <footer
             style={{
-              height: "90vh",
+              height: "100vh",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingTop:"50px"
             }}
             data-scroll-section
           >
