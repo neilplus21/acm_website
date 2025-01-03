@@ -228,9 +228,9 @@
     left: 50%;
   }
   .foo{
-    height: 125vh !important;
-    margin-top:1vw !important;
-    padding-top: 1vw !important;
+    height: 145vh !important;
+    margin-top:0vw !important;
+    padding-top: 0vw !important;
   }
 
   .registerBtn1 {
