@@ -75,7 +75,7 @@ export default function Pages() {
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
     text: "EVENTS",
-    speed: 0.6,
+    speed: 0.4,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
     text: "Our Team ",

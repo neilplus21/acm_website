@@ -1,14 +1,38 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedinIn,
   faInstagram,
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
+import { useScramble } from 'use-scramble';
+import { gsap } from 'gsap';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const { ref: scrambleRef1, replay: scrambleReplay1 } = useScramble({
+    text: 'Association for',
+    speed: 0.5,
+  });
+  const { ref: scrambleRef2, replay: scrambleReplay2 } = useScramble({
+    text: 'Computing Machinery',
+    speed: 0.4,
+  });
+  const { ref: scrambleRef3, replay: scrambleReplay3 } = useScramble({
+    text: 'NMAMIT Student Chapter',
+    speed: 0.3,
+  });
+
+  // GSAP animation for text entrance
+  useEffect(() => {
+    gsap.from('.scramble-text', {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: 'power4.out',
+    });
+  }, []);
   const socialLinks = [
     { name: 'linkedin', icon: faLinkedinIn, url: 'https://www.linkedin.com/company/acm-nmamit/' },
     { name: 'instagram', icon: faInstagram, url: '#' },
@@ -22,6 +46,30 @@ const Footer = () => {
           <div className={styles.wrapper}>
             {/* Header Section */}
             <header className={styles.header}>
+            <div className={styles.logoContainer}>
+              <div className={styles.mainhead}>
+                <div
+                  ref={scrambleRef1}
+                  onMouseEnter={() => scrambleReplay1()}
+                  className={styles.title}
+                >Association for
+                </div>
+                <div
+                  ref={scrambleRef2}
+                  onMouseEnter={() => scrambleReplay2()}
+                  className={styles.title}
+                >Computing Machinery
+                </div>
+                <div
+                  ref={scrambleRef3}
+                  onMouseEnter={() => scrambleReplay3()}
+                  className={styles.subtitle}
+                >NMAMIT Student Chapter
+                </div>
+              </div>
+            </div>
+          </header>
+           {/* <header className={styles.header}>
               <div className={styles.logoContainer}>
                 <div className={styles.mainhead}>
                   <div className={styles.title}>Association for</div>
@@ -29,7 +77,7 @@ const Footer = () => {
                   <div className={styles.subtitle}>NMAMIT Student Chapter</div>
                 </div>
               </div>
-            </header>
+            </header> */}
 
             {/* Main Content Grid */}
             <div className={styles.mainGrid}>
