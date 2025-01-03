@@ -419,7 +419,7 @@ const Members = () => {
           {renderMemberGroup('creative', 'Creative')}
           {renderMemberGroup('operation', 'Operations')}
         </div>
-        <Footer />
+      <Footer />
       </div>
 
     </>

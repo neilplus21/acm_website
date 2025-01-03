@@ -33,7 +33,7 @@ const profiles = [
 
   },
   {
-    name: "Rashmitha r Bhangera",
+    name: "Rashmitha R Bhangera",
     role: "Tresurer",
     profilePic: '/images/Rashmitha.webp'
 
@@ -75,7 +75,7 @@ export default function Pages() {
   // this would be for upcomig events 
   const { ref: scrambleRef4, replay: scrambleReplay4 } = useScramble({
     text: "EVENTS",
-    speed: 0.4,
+    speed: 0.6,
   });
   const { ref: scrambleRef5, replay: scrambleReplay5 } = useScramble({
     text: "Our Team ",
@@ -179,14 +179,11 @@ export default function Pages() {
 
         {/* 3rd page upcoming evenets  */}
 
-        <div id='section3' style={{
-            // background:"white"
-      
-        }}  className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
           <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
             style={{
               position: 'relative',
-              top: '3.8vw',
+              top: '2.8vw',
               fontSize: '100px',
               letterSpacing: '10px',
               color: '#FFFFF0',
@@ -195,16 +192,11 @@ export default function Pages() {
               marginBottom: '.5vw',
               textAlign: 'center',
             }}
-            data-scroll data-scroll-speed="1"
+            data-scroll data-scroll-speed="2"
           >
+            ..
           </h1>
-          <div style={{
-            marginTop:'50px',
-          }}>
-          <Events /> 
-
-          </div>
-     
+          {<Events /> }
           {/*<button style={
             {
               position: 'relative',
@@ -269,8 +261,7 @@ export default function Pages() {
           backgroundColor: 'black',
         }} id="section5" className={styles.pageSection + ' ' + styles.foo} data-scroll-section>
 
-          <Footer
-          />
+          <Footer/>
         </div>
 
 

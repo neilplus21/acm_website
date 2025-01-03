@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from "styled-components";
+
 import eventImage from '../Event/e1.jpg';
 
 const Events = () => {
