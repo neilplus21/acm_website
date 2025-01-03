@@ -35,8 +35,8 @@ const Footer = () => {
   }, []);
   const socialLinks = [
     { name: 'linkedin', icon: faLinkedinIn, url: 'https://www.linkedin.com/company/acm-nmamit/' },
-    { name: 'instagram', icon: faInstagram, url: '#' },
-    { name: 'github', icon: faGithub, url: 'https://github.com/neilplus21/acm_website' },
+    { name: 'instagram', icon: faInstagram, url: 'https://www.instagram.com/acm_nitte/' },
+    { name: 'github', icon: faGithub, url: 'https://github.com/acmnmamit' },
   ];
 
   return (
@@ -97,7 +97,7 @@ const Footer = () => {
               <div className={styles.contactSection}>
                 <h2 className={styles.sectionTitle}>Contact Us</h2>
                 <div className={styles.contactInfo}>
-                  <div>something.edu.in</div>
+                  <div>nmamitacm@nitte.edu.in</div>
                 </div>
                 <h2 className={styles.sectionTitle} style={{ marginTop: '2rem' }}>Connect</h2>
                 <div className={styles.socialLinks}>
@@ -107,6 +107,7 @@ const Footer = () => {
                       href={social.url}
                       className={styles.socialLink}
                       aria-label={social.name}
+                      target="_blank" 
                     >
                       <FontAwesomeIcon icon={social.icon} className={styles.socialIcon} />
                     </a>
