@@ -124,7 +124,7 @@ const membersData = [
     role: "Graphic Designer",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Sarang_pxzxmq.jpg',
-    profilePic: '/images/sarang.webp',
+    profilePic: '/images/Sarang.webp',
     socialLinks: {
       instagram: "https://instagram.com",
       linkedin: "https://twitter.com",
@@ -341,7 +341,7 @@ const membersData = [
     role: "Second Year Representative",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355969/Susan_xvahk6.jpg',
-    profilePic: '/images/susan.webp',
+    profilePic: '/images/Susan.webp',
     socialLinks: {
       instagram: "https://instagram.com",
       linkedin: "https://twitter.com", 
