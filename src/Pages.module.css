@@ -13,9 +13,14 @@
   background-color: black;
 } */
 
+.big{
+  background-color: black;
+  height: auto;
+}
+
 .pagesContainer {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   min-height: 100vh;
 }

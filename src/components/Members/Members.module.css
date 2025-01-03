@@ -12,8 +12,18 @@ body{
 .membersContainer {
   margin-top: 4vw;
   background-color: #000000;
-  height: 543vh;
+  height: 525vh;
 }
+
+
+.kk{
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
+}
+
+
+
 
 .groupSection {
   margin-bottom: 50px;

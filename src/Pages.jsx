@@ -114,19 +114,21 @@ export default function Pages() {
 
   // Locomotive Scroll initialization
   useEffect(() => {
+    // Initialize LocomotiveScroll
     const scrollInstance = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
       smoothMobile: true,
     });
 
-    scrollInstanceRef.current = scrollInstance;
+    // Update LocomotiveScroll instance
+    scrollInstance.update();
 
+    // Cleanup on unmount
     return () => {
       if (scrollInstance) scrollInstance.destroy();
     };
   }, []);
-
 
   //this function on clik scrolls to next page or section 
   const handleScrollToSection = (secID) => {
@@ -155,117 +157,140 @@ export default function Pages() {
   return (
     <>
 
+      <div className={styles.big}>
+        <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
+          <Navbar onNavigate={handleScrollToSection} />
+          {/* first page(Hero) */}
 
-      <div className={styles.pagesContainer} ref={scrollRef} data-scroll-container>
-        <Navbar onNavigate={handleScrollToSection} />
-        {/* first page(Hero) */}
+          <div id='section1' className={styles.pageSection + ' ' + styles.section1}
+            data-scroll-section ref={container}>
 
-        <div id='section1' className={styles.pageSection + ' ' + styles.section1}
-          data-scroll-section ref={container}>
+            <VantaRings />
 
-          <VantaRings />
-
-        </div>
-
-
-
-        {/* second page about section  */}
-        <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
-          {/* <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1> */}
-          <Aboutus />
-          {/* <h1 className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1> */}
-        </div>
+          </div>
 
 
-        {/* 3rd page upcoming evenets  */}
 
-        <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
-          <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
-            style={{
-              position: 'relative',
-              top: '2.8vw',
-              fontSize: '100px',
-              letterSpacing: '10px',
-              color: '#FFFFF0',
-              textTransform: 'uppercase',
-              fontWeight: 'bold',
-              marginBottom: '.5vw',
-              textAlign: 'center',
-            }}
-            data-scroll data-scroll-speed="2"
-          >
-            ..
-          </h1>
-          {<Events /> }
-          {/*<button style={
+          {/* second page about section  */}
+          <div id="section2" className={styles.pageSection + ' ' + styles.section2} data-scroll-section>
+            {/* <h1 ref={scrambleRef6} onMouseEnter={handleMouseEnter6} className="animate-text" data-scroll data-scroll-speed="2">About</h1> */}
+            <Aboutus />
+            {/* <h1 className="animate-text" data-scroll data-scroll-speed="2">Coming Soon...</h1> */}
+          </div>
+
+
+          {/* 3rd page upcoming evenets  */}
+
+          <div id='section3' className={styles.pageSection + ' ' + styles.section3} data-scroll-section>
+            <h1 ref={scrambleRef4} onMouseEnter={handleMouseEnter4}
+              style={{
+                position: 'relative',
+                top: '2.8vw',
+                fontSize: '100px',
+                letterSpacing: '10px',
+                color: '#FFFFF0',
+                textTransform: 'uppercase',
+                fontWeight: 'bold',
+                marginBottom: '.5vw',
+                textAlign: 'center',
+              }}
+              data-scroll data-scroll-speed="2"
+            >
+              ..
+            </h1>
+            {<Events />}
+            {/*<button style={
             {
               position: 'relative',
               top: '2vw'
             }
 
           } className={styles.registerBtn} >More</button> */}
-       
-        </div>
 
-
-
-        {/* core members */}
-
-        <div id='section4' className={styles.pageSection + ' ' + styles.section4} data-scroll-section>
-          <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
-            style={{
-              fontSize: window.innerWidth <= 768 ? '60px' : '100px',
-              letterSpacing: '10px',
-              marginTop: window.innerWidth <= 768 ? '10px' : '15px',
-              color: '#FFFFF0',
-              textTransform: 'uppercase',
-              fontWeight: 'bold',
-              textAlign: 'center',
-              position: 'relative',
-              top: '3vw'
-            }}
-            className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
-
-
-
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: 'row',
-              gap: '20px'
-            }}
-          >
-
-            <div className={styless.cardsContainer}>
-
-              {profiles.map((profile, index) => (
-                <ProfileCard
-                  key={index}
-                  name={profile.name}
-                  role={profile.role}
-                  profilePic={profile.profilePic}
-                />
-              ))}
-              <button className={styles.more}
-                onClick={() => navigate('/members')}
-                style={{
-                  textAlign: 'center'
-                }}>More</button>
-            </div>
           </div>
 
-        </div>
 
-        <div style={{
+
+          {/* core members */}
+
+          <div id='section4' className={styles.pageSection + ' ' + styles.section4} data-scroll-section>
+            <h1 ref={scrambleRef5} onMouseEnter={handleMouseEnter5}
+              style={{
+                fontSize: window.innerWidth <= 768 ? '60px' : '100px',
+                letterSpacing: '10px',
+                marginTop: window.innerWidth <= 768 ? '10px' : '15px',
+                color: '#FFFFF0',
+                textTransform: 'uppercase',
+                fontWeight: 'bold',
+                textAlign: 'center',
+                position: 'relative',
+                top: '3vw'
+              }}
+              className="animate-text" data-scroll data-scroll-speed="2">Our Team</h1>
+
+
+
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'row',
+                gap: '20px',
+
+              }}
+            >
+
+              <div className={styless.cardsContainer}>
+
+                {profiles.map((profile, index) => (
+                  <ProfileCard
+                    key={index}
+                    name={profile.name}
+                    role={profile.role}
+                    profilePic={profile.profilePic}
+                  />
+                ))}
+                <button className={styles.more}
+                  onClick={() => navigate('/members')}
+                  style={{
+                    textAlign: 'center'
+                  }}>More</button>
+              </div>
+            </div>
+
+          </div>
+
+          {/* <div style={{
           backgroundColor: 'black',
         }} id="section5" className={styles.foo} data-scroll-section>
 
-          <Footer/>
-        </div>
+        </div> */}
 
 
-      </div >
+          {/* <div style={{ height: '200px', backgroundColor: 'red' }}></div> */}
+          {/* <div ref={scrollRef} data-scroll-container>
+         
+            <div className={styles.kk}>
+              <Footer />
+            </div>
+          </div> */}
+
+          <footer
+            style={{
+              height: "90vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            data-scroll-section
+          >
+            <Footer />
+          </footer>
+
+
+        </div >
+      </div>
+
     </>
 
   );
