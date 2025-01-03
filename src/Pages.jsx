@@ -23,7 +23,7 @@ const profiles = [
   {
     name: "Neil Mammen Prakash",
     role: "ChairPerson",
-    profilePic: '/images/nn.jpg'
+    profilePic: '/images/nn.webp'
   },
   {
     name: "Namratha M",

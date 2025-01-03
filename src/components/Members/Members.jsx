@@ -13,7 +13,7 @@ const membersData = [
     role: "Chairperson",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355947/neil_y4xsjt.jpg',
-    profilePic: '/images/nn.jpg',
+    profilePic: '/images/nn.webp',
     socialLinks: {
       instagram: "https://instagram.com/neilmp21",
       linkedin: "https://www.linkedin.com/in/neil-mammen-prakash/",
