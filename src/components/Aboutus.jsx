@@ -14,7 +14,7 @@ function Aboutus() {
                 </p>
                 <button className="read-more-btn">
                     <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">
-                        Read More...
+                        Read More
                     </a>
                 </button>
 

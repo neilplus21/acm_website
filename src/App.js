@@ -6,6 +6,7 @@ import {
 import Pages from '../src/Pages';
 import Members from './components/Members/Members';
 import Navbar from './components/Navbar/Navbar';
+import TerminalAnimation from './TerminalAnimation';
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,11 @@ function App() {
       path: "/members",
       element: <Members />,
     },
+
+    {
+      path: "/kk",
+      element: <TerminalAnimation />
+    }
     // Uncomment the following routes if needed
     // {
     //   path: "/a",

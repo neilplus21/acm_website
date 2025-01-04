@@ -13,7 +13,7 @@ body {
     justify-content: center;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    background-image: url("acm_globe.webp"); /* Replace with your image path */
+    background-image: url("acm_globe.jpg"); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
