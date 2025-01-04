@@ -11,7 +11,7 @@ import TerminalAnimation from './TerminalAnimation';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/kk",
       element: <Pages />,
     },
     {
@@ -20,7 +20,7 @@ function App() {
     },
 
     {
-      path: "/kk",
+      path: "/",
       element: <TerminalAnimation />
     }
     // Uncomment the following routes if needed
