@@ -347,7 +347,7 @@ const TerminalAnimation = () => {
               font-size: 14px;
             }
             .asciiArt {
-      font-size: 1rem; /* Smaller font size for narrow screens */
+      font-size: .8rem; /* Smaller font size for narrow screens */
       line-height: 1.1; /* Adjust line spacing */
     }
 
@@ -361,6 +361,13 @@ const TerminalAnimation = () => {
               font-size: 18px; 
             }
           }
+
+          @media (max-width: 480px) {
+    .asciiArt {
+      font-size: 0.8rem; /* Even smaller for very small screens */
+      line-height: 1; /* Compact line spacing */
+    }
+  }
         `}
       </style>
     </div >
