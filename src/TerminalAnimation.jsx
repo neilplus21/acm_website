@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const styles = {
   body: {
-    width: '100vw'
+    width: '120vw'
   },
   container: {
     position: 'fixed',
@@ -68,10 +68,10 @@ const styles = {
   output: {
     flexGrow: 1,
     overflowY: 'auto',
-    overflowX: 'hidden', 
+    overflowX: 'hidden',
     marginBottom: '20px',
     paddingRight: '10px',
-    wordWrap: 'break-word', 
+    wordWrap: 'break-word',
     overflowWrap: 'break-word',
     whiteSpace: 'pre-wrap',
   },
@@ -108,6 +108,15 @@ const styles = {
     maxWidth: '100%',
     maxHeight: '100%',
     objectFit: 'contain',
+  },
+
+  asciiArt: {
+    whiteSpace: 'pre', // Preserve exact formatting
+    fontSize: '1.2rem', // Adjust size for better readability
+    textAlign: 'center', // Center-align ASCII art
+    lineHeight: '1.5', // Ensure proper spacing between lines
+    overflowX: 'auto', // Allow horizontal scrolling for ASCII if needed
+    display: 'block', // Ensure it doesn't interfere with wrapping styles
   },
 
 };
@@ -268,11 +277,9 @@ const TerminalAnimation = () => {
               {output.map((line, i) => (
                 <div
                   key={i}
-                  style={{
-                    marginBottom: '8px',
-                    whiteSpace: 'pre-wrap',
-                    fontSize: '1.2rem',
-                  }}
+                  style={
+                    line.includes('████') ? styles.asciiArt : { marginBottom: '8px', whiteSpace: 'pre-wrap' }
+                  }
                 >
                   {line}
                 </div>
