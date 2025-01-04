@@ -6,17 +6,23 @@ import {
 import Pages from '../src/Pages';
 import Members from './components/Members/Members';
 import Navbar from './components/Navbar/Navbar';
+import TerminalAnimation from './TerminalAnimation';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/kk",
       element: <Pages />,
     },
     {
       path: "/members",
       element: <Members />,
     },
+
+    {
+      path: "/",
+      element: <TerminalAnimation />
+    }
     // Uncomment the following routes if needed
     // {
     //   path: "/a",
