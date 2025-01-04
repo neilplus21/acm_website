@@ -261,34 +261,12 @@ export default function Pages() {
 
           </div>
 
-          {/* <div style={{
+        <div style={{
           backgroundColor: 'black',
         }} id="section5" className={styles.foo} data-scroll-section>
 
-        </div> */}
-
-
-          {/* <div style={{ height: '200px', backgroundColor: 'red' }}></div> */}
-          {/* <div ref={scrollRef} data-scroll-container>
-         
-            <div className={styles.kk}>
-              <Footer />
-            </div>
-          </div> */}
-
-          <footer
-            style={{
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              paddingTop:"50px",
-              backgroundColor:"black"
-            }}
-            data-scroll-section
-          >
-            <Footer />
-          </footer>
+          <Footer/>
+        </div>
 
 
         </div >
