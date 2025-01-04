@@ -346,6 +346,10 @@ const TerminalAnimation = () => {
             .input {
               font-size: 14px;
             }
+            .asciiArt {
+      font-size: 1rem; /* Smaller font size for narrow screens */
+      line-height: 1.1; /* Adjust line spacing */
+    }
 
          .output div {
       word-wrap: break-word;
