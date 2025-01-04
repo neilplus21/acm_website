@@ -97,7 +97,7 @@ const Footer = () => {
               <div className={styles.contactSection}>
                 <h2 className={styles.sectionTitle}>Contact Us</h2>
                 <div className={styles.contactInfo}>
-                  <div>nmamitacm@nitte.edu.in</div>
+                  <div>acmnmamit24@gmail.com</div>
                 </div>
                 <h2 className={styles.sectionTitle} style={{ marginTop: '2rem' }}>Connect</h2>
                 <div className={styles.socialLinks}>
