@@ -180,7 +180,7 @@ const TerminalAnimation = () => {
   }, [output]);
 
   const handleCommand = (cmd) => {
-    cmd = cmd.trim();
+    cmd = cmd.trim().toLowerCase();
     switch (cmd) {
       case 'start':
         return [
