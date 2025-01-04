@@ -12,7 +12,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   const { ref: scrambleRef1, replay: scrambleReplay1 } = useScramble({
     text: 'Association for',
-    speed: 0.5,
+    speed: 0.3,
   });
   const { ref: scrambleRef2, replay: scrambleReplay2 } = useScramble({
     text: 'Computing Machinery',
@@ -69,19 +69,11 @@ const Footer = () => {
               </div>
             </div>
           </header>
-           {/* <header className={styles.header}>
-              <div className={styles.logoContainer}>
-                <div className={styles.mainhead}>
-                  <div className={styles.title}>Association for</div>
-                  <div className={styles.title}>Computing Machinery</div>
-                  <div className={styles.subtitle}>NMAMIT Student Chapter</div>
-                </div>
-              </div>
-            </header> */}
+       
 
-            {/* Main Content Grid */}
+        
             <div className={styles.mainGrid}>
-              {/* About Section */}
+         
               <div className={styles.aboutSection}>
                 <h2 className={styles.sectionTitle}>Find Us</h2>
                 <iframe

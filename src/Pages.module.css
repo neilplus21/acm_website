@@ -178,7 +178,7 @@
 
   }
 .foo{
-  min-height: 120vh;
+  min-height: 102vh;
   background-color: #fff;
 }
 
@@ -219,7 +219,7 @@
   }
   .more{
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     left: 50%;
 

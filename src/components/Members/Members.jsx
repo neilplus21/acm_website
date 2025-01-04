@@ -6,6 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Footer from '../Footer/Footer';
 import HexagonParticles from '../../HexagonParticles';
+import NavigationCompass from '../NavigationCompass';
 // as of now it's temporarily here, later we'll make a separate JSON file
 const membersData = [
   {
@@ -344,7 +345,7 @@ const membersData = [
     profilePic: '/images/Susan.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com", 
+      linkedin: "https://twitter.com",
       github: "https://github.com"
     },
     category: 'operation'
@@ -372,9 +373,11 @@ const Members = () => {
     if (members.length === 0) return null;
 
     return (
-      
+
+
       <section className={styles.groupSection} id={category}>
-      <HexagonParticles />
+        <NavigationCompass />
+        <HexagonParticles />
         <h2 className={styles.sectionHeading}>{title}</h2>
         <div className={styles.section}>
           {members.map((member, index) => (
@@ -412,18 +415,18 @@ const Members = () => {
 
   return (
     <>
-    
+
       <div id="scroll-container" className={styles.membersContainer}>
         <div className={styles.info}>
           {renderMemberGroup('officeBearer', 'Executive')}
           {renderMemberGroup('creative', 'Creative')}
           {renderMemberGroup('operation', 'Operations')}
         </div>
-      <Footer  />
+        <Footer />
       </div>
 
 
-    
+
 
     </>
 

@@ -114,13 +114,14 @@ export default function Pages() {
 
   // Locomotive Scroll initialization
   useEffect(() => {
-    // Initialize LocomotiveScroll
+  
     const scrollInstance = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
       smoothMobile: true,
     });
 
+    scrollInstanceRef.current = scrollInstance;
     // Update LocomotiveScroll instance
     scrollInstance.update();
 

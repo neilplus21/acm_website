@@ -10,9 +10,9 @@ body{
   /* min-height: 100vh; */
 }
 .membersContainer {
-  margin-top: 4vw;
+  /* margin-top: 4vw; */
   background-color: #000000;
-  height: 525vh;
+  height: 516vh;
 }
 
 

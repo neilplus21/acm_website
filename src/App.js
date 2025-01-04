@@ -11,7 +11,7 @@ import TerminalAnimation from './TerminalAnimation';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/kk",
+      path: "/",
       element: <Pages />,
     },
     {
@@ -20,33 +20,17 @@ function App() {
     },
 
     {
-      path: "/",
+      path: "/t",
       element: <TerminalAnimation />
     }
-    // Uncomment the following routes if needed
-    // {
-    //   path: "/a",
-    //   element: <TeamCard />,
-    // },
-    // {
-    //   path: "/b",
-    //   element: <TeamMember />,
-    // },
+
+    
   ]);
 
   return (
     <div className="App">
-      {/* Include Navbar */}
-      <Navbar
-        onNavigate={(sectionId) => {
-          const section = document.querySelector(sectionId);
-          if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
-      />
-      {/* Router Provider */}
       <RouterProvider router={router} />
+
     </div>
   );
 }

@@ -182,9 +182,17 @@
   .aboutSection {
     margin-top: 18vw;
   }
+  .title{
+    margin-top: 2.5vw;
+    font-size: 2rem;
+  }
+  .subtitle{
+    margin-top: 6vw;
+  }
 
   .mainGrid {
     grid-template-columns: 1fr;
+    margin-top: 28vw;
   }
 
   .socialLinks {
