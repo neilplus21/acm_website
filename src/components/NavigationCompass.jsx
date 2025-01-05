@@ -1,21 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './NavigationCompass.module.css';
 
 const NavigationCompass = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-        console.log('ScrollY:', window.scrollY);
+      console.log('ScrollY:', window.scrollY);
       setIsVisible(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Detect outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false); // Close the menu
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
@@ -30,7 +50,10 @@ const NavigationCompass = () => {
           </svg>
         </button>
 
-        <div className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}>
+        <div
+          ref={menuRef} // Attach ref to the menu container
+          className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}
+        >
           <div className={styles.menuContainer}>
             <button
               className={styles.menuButton}
@@ -44,9 +67,8 @@ const NavigationCompass = () => {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
               <span>Home</span>
-            </button>
-
-            {/* <button
+              </button>
+               {/* <button
               className={styles.menuButton}
               onClick={() => {
                 navigate(-1);
@@ -73,6 +95,7 @@ const NavigationCompass = () => {
               </svg>
               <span>Top</span>
             </button> */}
+            
           </div>
         </div>
       </div>
