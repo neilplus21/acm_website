@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <Members />,
   },
   {
-    path: "/t",
+    path: "/magic",
     element: <TerminalAnimation />
   }
 ]);

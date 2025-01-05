@@ -37,7 +37,10 @@
   margin: 0;
   display: inline-block;
 }
-
+.magic{
+  padding-left: 65vw;
+ 
+}
 /* Mobile Toggle Button */
 .menuToggle {
   background: none;
@@ -117,14 +120,45 @@
   overflow: hidden; 
 }
 
-@media (max-width: 1024px) { /* Tablet view */
+@media (max-width: 1024px) { 
   .logo {
     width: 7vw; 
+  }
+
+  .magic {
+    padding-left: 0;
+    position: absolute;
+    right: 70px;
+    top: 52%;
+    transform: translateY(-50%);
+  }
+  
+  .menuToggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11; 
   }
 }
 
 @media (max-width: 768px) { /* Mobile view */
   .logo {
-    width: 10vw; 
+    width: 12vw; 
+  }
+  .magic {
+    padding-left: 0;
+    position: absolute;
+    right: 60px;
+    top: 52%;
+    transform: translateY(-50%);
+  }
+  
+  .menuToggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11; 
   }
 }
