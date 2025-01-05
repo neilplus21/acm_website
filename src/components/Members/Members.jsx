@@ -6,8 +6,8 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Footer from '../Footer/Footer';
 import HexagonParticles from '../../HexagonParticles';
-import NavigationCompass from '../NavigationCompass';
 // as of now it's temporarily here, later we'll make a separate JSON file
+
 const membersData = [
   {
     name: "Neil",
@@ -25,7 +25,7 @@ const membersData = [
   },
   {
     name: "Namratha",
-    role: "Vice Chairperson ",
+    role: "Vice Chairperson",
     //about: "Creating seamless user experiences and elegant design solutions.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg',
     profilePic: '/images/nam.webp',
@@ -95,7 +95,7 @@ const membersData = [
   },
   {
     name: "Shaldon Barnes",
-    role: " Co Web Master",
+    role: "Co-Webmaster",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729365279/IMG_3364_posa3d.jpg',
     profilePic: '/images/sheldon.jpg',
@@ -125,7 +125,7 @@ const membersData = [
     role: "Graphic Designer",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355946/Sarang_pxzxmq.jpg',
-    profilePic: '/images/Sarang.webp',
+    profilePic: '/images/sarang.webp',
     socialLinks: {
       instagram: "https://instagram.com",
       linkedin: "https://twitter.com",
@@ -249,7 +249,7 @@ const membersData = [
 
   {
     name: "Gokul Anil",
-    role: "Co-Publicity Head",
+    role: "Publicity Co-Head",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355972/gokul_uhudfi.jpg',
     profilePic: '/images/gokul.webp',
@@ -342,10 +342,10 @@ const membersData = [
     role: "Second Year Representative",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355969/Susan_xvahk6.jpg',
-    profilePic: '/images/Susan.webp',
+    profilePic: '/images/susan.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
+      linkedin: "https://twitter.com", 
       github: "https://github.com"
     },
     category: 'operation'
@@ -373,11 +373,9 @@ const Members = () => {
     if (members.length === 0) return null;
 
     return (
-
-
+      
       <section className={styles.groupSection} id={category}>
-        <NavigationCompass />
-        <HexagonParticles />
+      <HexagonParticles />
         <h2 className={styles.sectionHeading}>{title}</h2>
         <div className={styles.section}>
           {members.map((member, index) => (
@@ -422,11 +420,8 @@ const Members = () => {
           {renderMemberGroup('creative', 'Creative')}
           {renderMemberGroup('operation', 'Operations')}
         </div>
-        <Footer />
+      <Footer />
       </div>
-
-
-
 
     </>
 
