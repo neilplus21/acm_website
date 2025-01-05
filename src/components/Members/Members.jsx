@@ -25,7 +25,7 @@ const membersData = [
   },
   {
     name: "Namratha",
-    role: "Vice Chairperson ",
+    role: "Vice Chairperson",
     //about: "Creating seamless user experiences and elegant design solutions.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg',
     profilePic: '/images/nam.webp',
@@ -95,7 +95,7 @@ const membersData = [
   },
   {
     name: "Shaldon Barnes",
-    role: " Co Webmaster",
+    role: "Co-Webmaster",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729365279/IMG_3364_posa3d.jpg',
     profilePic: '/images/sheldon.jpg',
@@ -249,7 +249,7 @@ const membersData = [
 
   {
     name: "Gokul Anil",
-    role: "Co-Publicity Head",
+    role: "Publicity Co-Head",
     //about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic.",
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355972/gokul_uhudfi.jpg',
     profilePic: '/images/gokul.webp',
