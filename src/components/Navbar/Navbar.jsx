@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import { FaBars, FaTimes, FaHome, FaInfoCircle, FaEnvelope, FaUsers, FaCalendarAlt } from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 import Button from "../../Button";
 import { useNavigate } from 'react-router-dom';
 import i from './acm_logo.png'
@@ -66,11 +66,11 @@ const Navbar = ({onNavigate}) => {
         >
           <ul className={styles.menu}>
         
-            <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} ><FaHome size={20} color="#fff" /> Home</li>
-            <li className={styles.menuItem} onClick={() => { onNavigate('#section2'); toggleMenu(); }}> <FaInfoCircle size={20} color="#fff" /> About</li>
-            <li className={styles.menuItem} onClick={() => { onNavigate('#section3'); toggleMenu(); }}><FaCalendarAlt size={20} color="#fff" /> Events </li>
-            <li className={styles.menuItem} onClick={() => { onNavigate('#section4'); toggleMenu(); }}>  <FaUsers size={20} color="#fff" /> Team</li>
-            <li className={styles.menuItem}  onClick={() => { onNavigate('#section5'); toggleMenu(); }} >  <FaEnvelope size={20} color="#fff" /> Contact Us</li>
+            <li className={styles.menuItem}  onClick={() => { onNavigate('#section1'); toggleMenu(); }} >Home</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section2'); toggleMenu(); }}>About</li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section3'); toggleMenu(); }}>Events </li>
+            <li className={styles.menuItem} onClick={() => { onNavigate('#section4'); toggleMenu(); }}>Team</li>
+            <li className={styles.menuItem}  onClick={() => { onNavigate('#section5'); toggleMenu(); }} >Contact Us</li>
           
           </ul>
         </div>

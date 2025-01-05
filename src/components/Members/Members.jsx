@@ -6,6 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Footer from '../Footer/Footer';
 import HexagonParticles from '../../HexagonParticles';
+import NavigationCompass from '../NavigationCompass';
 // as of now it's temporarily here, later we'll make a separate JSON file
 
 const membersData = [
@@ -356,6 +357,7 @@ const membersData = [
 ];
 const Members = () => {
   // Initialize Locomotive Scroll
+  //<NavigationCompass />
   useEffect(() => {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('#scroll-container'),
@@ -366,6 +368,7 @@ const Members = () => {
       scroll.destroy();
     };
   }, []);
+  //
 
   const renderMemberGroup = (category, title) => {
     const members = membersData.filter(member => member.category === category);
@@ -407,13 +410,15 @@ const Members = () => {
             </div>
           ))}
         </div>
+        <NavigationCompass />
       </section>
+      
     );
   };
 
   return (
     <>
-
+      
       <div id="scroll-container" className={styles.membersContainer}>
         <div className={styles.info}>
           {renderMemberGroup('officeBearer', 'Executive')}

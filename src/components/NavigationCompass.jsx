@@ -67,35 +67,7 @@ const NavigationCompass = () => {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
               <span>Home</span>
-              </button>
-               {/* <button
-              className={styles.menuButton}
-              onClick={() => {
-                navigate(-1);
-                setIsOpen(false);
-              }}
-            >
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                      d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              <span>Go Back</span>
-            </button> */}
-
-            {/* <button
-              className={styles.menuButton}
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setIsOpen(false);
-              }}
-            >
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                      d="M5 10l7-7m0 0l7 7m-7-7v18" />
-              </svg>
-              <span>Top</span>
-            </button> */}
-            
+            </button>
           </div>
         </div>
       </div>
