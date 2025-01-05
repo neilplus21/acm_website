@@ -24,7 +24,7 @@ const Events = () => {
           <div className="event-card__info">
             <div className="event-card__location">📍 TBA</div>
             <div className="event-card__team-size">👥 Team Size: 2-3 Members</div>
-            <div className="event-card__photography">📸 spots available</div>
+            {/* <div className="event-card__photography">📸 spots available</div> */}
           </div>
           <div className="event-card__actions">
             <a className="event-card__button event-card__button--register" href="#">Join Party!</a>
