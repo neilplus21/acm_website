@@ -145,6 +145,7 @@
 @media (max-width: 768px) { /* Mobile view */
   .logo {
     width: 12vw; 
+    margin-left: -10px;
   }
   .magic {
     padding-left: 0;
@@ -152,6 +153,9 @@
     right: 60px;
     top: 52%;
     transform: translateY(-50%);
+  }
+  clubName{
+    font-size: 1.3rem;
   }
   
   .menuToggle {

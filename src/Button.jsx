@@ -159,6 +159,11 @@ const Button = () => {
         letter-spacing: 2px;
       }
     }
+      @media (max-width: 1024px) { 
+   .btn {
+        width: 9.5rem !important;
+        height: 3rem !important;
+      }
   `;
 
   return (
