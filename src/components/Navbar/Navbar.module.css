@@ -145,12 +145,12 @@
 @media (max-width: 768px) { /* Mobile view */
   .logo {
     width: 12vw; 
-    margin-left: -10px;
+    margin-left: -4vw;
   }
   .magic {
     padding-left: 0;
     position: absolute;
-    right: 60px;
+    right: 50px;
     top: 52%;
     transform: translateY(-50%);
   }

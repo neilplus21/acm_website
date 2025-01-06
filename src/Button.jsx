@@ -8,8 +8,6 @@ const Button = () => {
   }
 `;
   const styles = {
-
-
     wrapper: {
       position: 'relative'
     },
@@ -17,6 +15,7 @@ const Button = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      width:'13vw',
       overflow: 'hidden',
       backgroundSize: '300% 300%',
       cursor: 'pointer',
@@ -104,70 +103,78 @@ const Button = () => {
   `;
 
   const additionalCSS = `
-    .btn {
-      width: 13rem;
-      height: 3rem;
-    }
-    
-    .btn:hover #container-stars {
-      z-index: 1;
-      background-color: #212121;
-    }
-    .btn:hover {
-      transform: scale(1.1);
-    }
-    .btn:active {
-      border: double 4px #fe53bb;
-      background-origin: border-box;
-      background-clip: content-box, border-box;
-      animation: none;
-    }
-    .btn:active .circle {
-      background: #fe53bb;
-    }
-    #stars::after {
-      content: "";
-      position: absolute;
-      top: -10rem;
-      left: -100rem;
-      width: 100%;
-      height: 100%;
-      animation: animStarRotate 90s linear infinite;
-      background-image: radial-gradient(#ffffff 1px, transparent 1%);
-      background-size: 50px 50px;
-    }
-    #stars::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -50%;
-      width: 170%;
-      height: 500%;
-      animation: animStar 60s linear infinite;
-      background-image: radial-gradient(#ffffff 1px, transparent 1%);
-      background-size: 50px 50px;
-      opacity: 0.5;
-    }
+  .btn {
+    width: 13rem !important;
+    height: 3.5rem !important;
+  }
+  
+  .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  .btn:active {
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  .btn:active .circle {
+    background: #fe53bb;
+  }
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
 
-    @media (max-width: 768px) {
-      .btn {
-        width: 8rem !important;
-        height: 2.6rem !important;
-      }
-      .btn strong {
-        font-size: 3vw !important;
-        letter-spacing: 2px;
-      }
+  /* Mobile styles */
+  @media screen and (max-width: 768px) {
+    .btn {
+      width: 5.9rem !important;
+      height: 2.5rem !important;
     }
-      @media (max-width: 1024px) { 
-   .btn {
-        width: 9.5rem !important;
-        height: 3rem !important;
-      }
-  `;
+    .btn strong {
+      font-size: 1rem !important;
+      letter-spacing: 1px !important;
+    }
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .btn {
+      width: 9.5rem !important;
+      height: 3rem !important;
+    }
+    .btn strong {
+      font-size: 0.8rem !important;
+    }
+  }
+`;
 
   return (
     <>
+      <style>{fontFaceCSS}</style>
       <style>{keyframes}</style>
       <style>{additionalCSS}</style>
       <div style={styles.wrapper}>

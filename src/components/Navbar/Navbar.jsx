@@ -47,7 +47,7 @@ const Navbar = ({onNavigate}) => {
               alt="ACM Logo"
             />
             <span className={styles.clubName}> @NMAMIT</span>
-          <span className={styles.magic} onClick={handleClick}> <Button /></span> 
+          <span className={styles.magic} onClick={handleClick}> <Button /></span>
           </div>
 
           {/* Mobile Toggle Button */}
