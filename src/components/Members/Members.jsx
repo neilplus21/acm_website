@@ -31,9 +31,9 @@ const membersData = [
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355981/nam_rdh6ri.jpg',
     profilePic: '/images/nam.webp',
     socialLinks: {
-      instagram: "https://instagram.com/janedoe",
-      linkedin: "https://twitter.com/janedoe",
-      github: "https://github.com/janedoe"
+      instagram: "https://instagram.com/",
+      linkedin: "https://www.linkedin.com/in/namratha-m-82a653246/",
+      github: "https://github.com/Namratha8213"
     },
     category: 'officeBearer'
   },
@@ -44,9 +44,9 @@ const membersData = [
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355980/RashmithaRB_vrfpck.jpg',
     profilePic: '/images/Rashmitha.webp',
     socialLinks: {
-      instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
-      github: "https://github.com"
+      instagram: "https://www.instagram.com/khushi_rrb",
+      linkedin: "https://www.linkedin.com/in/rashmitha-r-bangera-335750246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/RashmithaRB"
     },
     category: 'officeBearer'
 
@@ -60,7 +60,7 @@ const membersData = [
     socialLinks: {
       instagram: "https://instagram.com",
       linkedin: "https://www.linkedin.com/in/kushagr-sharma-a26651258/",
-      github: "https://github.com"
+      github: "https://github.com/kushagr1501"
     },
     category: 'officeBearer'
 
@@ -156,8 +156,8 @@ const membersData = [
     profilePic: '/images/Aakash.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
-      github: "https://github.com"
+      linkedin: "https://www.linkedin.com/in/aakashb23/",
+      github: "https://github.com/Aakash0023"
     },
     category: 'creative'
 
@@ -169,9 +169,9 @@ const membersData = [
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355982/ajay_h14ovt.jpg',
     profilePic: '/images/ajay.webp',
     socialLinks: {
-      instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
-      github: "https://github.com"
+      instagram: "https://www.instagram.com/ajaykamath_/profilecard/?igsh=ZjM3ejR6cW9iM2w2",
+      linkedin: "https://www.linkedin.com/in/ajay-kamath-03a171275",
+      github: "https://github.com/Ajay28-ryzen"
     },
     category: 'creative'
   },
@@ -183,7 +183,7 @@ const membersData = [
     profilePic: '/images/MITHUN.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
+      linkedin: "https://www.linkedin.com/in/mithun-mallya-74ba88284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "https://github.com"
     },
     category: 'creative'
@@ -300,9 +300,9 @@ const membersData = [
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355968/diya_cnbahk.jpg',
     profilePic: '/images/diya.webp',
     socialLinks: {
-      instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
-      github: "https://github.com"
+      instagram: "https://www.instagram.com/diya_shetty12/",
+      linkedin: "https://www.linkedin.com/in/diya-m-shetty-674813296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/diyamshetty"
     },
     category: 'operation'
 
@@ -331,7 +331,7 @@ const membersData = [
     profilePic: '/images/shawn.webp',
     socialLinks: {
       instagram: "https://instagram.com",
-      linkedin: "https://twitter.com",
+      linkedin: "https://linkedin.com",
       github: "https://github.com"
     },
     category: 'operation'
@@ -345,9 +345,9 @@ const membersData = [
     // profilePic: 'https://res.cloudinary.com/dskq6j62q/image/upload/v1729355969/Susan_xvahk6.jpg',
     profilePic: '/images/susan.webp',
     socialLinks: {
-      instagram: "https://instagram.com",
-      linkedin: "https://twitter.com", 
-      github: "https://github.com"
+      instagram: "https://www.instagram.com/sparkly_noctiluca/",
+      linkedin: "https://www.linkedin.com/in/susanrionadsouza/", 
+      github: "https://github.com/Susandsouza"
     },
     category: 'operation'
 
