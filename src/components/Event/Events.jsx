@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-import eventImage from '../Event/e1.jpg';
+import eventImage from '../Event/temp.jpg';
 
 const Events = () => {
   return (
@@ -13,7 +13,7 @@ const Events = () => {
           <div className="event-card__circle"></div>
         </div>
         <div className="event-card__header">
-          <div className="event-card__date">tba</div>
+          <div className="event-card__date">18th January, 2025</div>
           <div className="event-card__title">The Great Code Auction</div>
         </div>
         <img src={eventImage} alt="Event" className="event-card__image" />
@@ -22,7 +22,7 @@ const Events = () => {
             The Great Code Auction
           </div>
           <div className="event-card__info">
-            <div className="event-card__location">📍 TBA</div>
+            <div className="event-card__location">📍 APJ Block, 4th Floor</div>
             <div className="event-card__team-size">👥 Team Size: 2-3 Members</div>
             {/* <div className="event-card__photography">📸 spots available</div> */}
           </div>
@@ -92,8 +92,8 @@ const StyledWrapper = styled.div`
   }
 
   .event-card__image {
-    width: 100%;
-    height: 200px;
+    width: 88%;
+    height: 250px;
     object-fit: cover;
     border-bottom: 3px solid #000;
   }
