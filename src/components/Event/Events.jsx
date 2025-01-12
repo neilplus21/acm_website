@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-import eventImage from '../Event/temp.jpg';
+import eventImage from '../Event/ca.jpg';
 
 const Events = () => {
   return (
@@ -13,7 +13,7 @@ const Events = () => {
           <div className="event-card__circle"></div>
         </div>
         <div className="event-card__header">
-          <div className="event-card__date">18th January, 2025</div>
+          <div className="event-card__date">Saturday, 18th January 2025</div>
           <div className="event-card__title">The Great Code Auction</div>
         </div>
         <img src={eventImage} alt="Event" className="event-card__image" />
@@ -22,12 +22,12 @@ const Events = () => {
             The Great Code Auction
           </div>
           <div className="event-card__info">
-            <div className="event-card__location">📍 APJ Block, 4th Floor</div>
+            <div className="event-card__location">📍 APJ Block, 4th Floor, ISL01 & ISL02</div>
             <div className="event-card__team-size">👥 Team Size: 2-3 Members</div>
             {/* <div className="event-card__photography">📸 spots available</div> */}
           </div>
           <div className="event-card__actions">
-            <a className="event-card__button event-card__button--register" href="#">Register now!</a>
+            <a className="event-card__button event-card__button--register" href="https://forms.gle/d7pCgKXbLMUTPFkb6" target='_blank'>Register now!</a>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ const StyledWrapper = styled.div`
 
   .event-card {
     width: 400px;
-    height:630px;
+    height: auto;
     background: linear-gradient(145deg, #fef8e8, #fdf4e3);
     border: 5px solid #000;
     box-shadow: 5px 5px 0 #fff;
@@ -92,20 +92,19 @@ const StyledWrapper = styled.div`
   }
 
   .event-card__image {
-    width: 88%;
-    height: 250px;
-    object-fit: cover;
+    width: 100%;
+    height: auto; 
+    object-fit: fill;
     border-bottom: 3px solid #000;
   }
 
   .event-card__details {
     padding: 1rem;
     text-align: center;
-  }
+}
 
   .event-card__description {
     font-size: 1.1rem;
-    ${'' /* margin-bottom: .5rem; */}
     line-height: 1.6;
     color: #444;
   }

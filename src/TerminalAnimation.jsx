@@ -184,60 +184,54 @@ const TerminalAnimation = () => {
     switch (cmd) {
       case 'start':
         return [
-      `    ┌──────────────────────────────────────────────────────────────┐
-    │                 🌌  WELCOME TO ACM TERMINAL  🌌             │
-    └──────────────────────────────────────────────────────────────┘
-
-✨ COMMAND MENU ✨
-──────────────────────────────────────────────────────────────
-      visit      → 🌐 Open the ACM NMAMIT website
-team       → 👥 Meet our amazing team
-    events     → 📅 See what's happening next
-    clear      → 🧹 Clean the terminal screen
-
-──────────────────────────────────────────────────────────────
-💡 Tip: Type "help" anytime to view this menu again!
-──────────────────────────────────────────────────────────────
-`
+    `  ┌───────────────────────────────┐
+  │ 🌌 WELCOME TO ACM TERMINAL 🌌│
+  └───────────────────────────────┘
+    
+   ───────────────────────────────
+    ✨ COMMAND MENU ✨ 
+   ───────────────────────────────
+📂 visit  → 🌐 ACM NMAMIT website
+👥 team   → Meet our amazing team
+📅 events → Upcoming events
+🧹 clear  → Clean the terminal screen
+    
+    
+    💡 Tip: Type "help" anytime for guidance!
+    `
         ];
-
       case 'visit':
         window.open('https://nmamit.acm.org/', '_blank');
         return [
-          "Opening the official ACM website in a new tab...",
-          "Visit the link if it doesn't open automatically.",
+          "🌐 Opening the ACM NMAMIT website in a new tab...",
+          "💡 If it doesn't open, visit the link manually."
         ];
-
       case 'team':
         window.open('https://nmamit.acm.org/members', '_blank');
         return [
-          "Opening the team page in a new tab...",
-          "Check out our amazing team on the website!",
+          "👥 Opening the team page...",
+          "💡 Meet our amazing members!"
         ];
-
       case 'events':
         return [
-          "Upcoming Events:",
-          "- The Great Code Auction: tba",
+          "📅 UPCOMING EVENTS:",
+          "- The Great Code Auction: 18th Jan, 2025"
         ];
-
       case 'clear':
         setOutput([]);
         return [];
-
       case 'help':
         return [
-          "Available Commands:",
-          "- 'start': Display welcome message and available commands.",
-          "- 'visit': Get the link to our official website.",
-          "- 'team': Learn about our team members.",
-          "- 'events': View a list of upcoming events.",
+    `✨ AVAILABLE COMMANDS ✨
+- 🌌 'start': Show welcome message
+- 📂 'visit': ACM NMAMIT website link
+- 👥 'team': Learn about our team
+- 📅 'events': View upcoming events`
         ];
-
       default:
-        return ["Unknown command. Type 'help' for a list of commands."];
-    }
-  };
+        return ["❓ Unknown command. Type 'help' for guidance."];
+      }
+    };    
 
   const handleSubmit = async (e) => {
     e.preventDefault();
