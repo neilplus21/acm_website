@@ -10,8 +10,8 @@ import ReactGA from 'react-ga';
 import Pages from '../src/Pages';
 import Members from './components/Members/Members';
 import TerminalAnimation from './TerminalAnimation';
+const TRACKING_ID = process.env.REACT_APP_TRACKING_ID; 
 
-const TRACKING_ID = 'G-WDP405HRFR'; // Replace with your actual GA4 Measurement ID
 ReactGA.initialize(TRACKING_ID);
 
 const router = createBrowserRouter([
@@ -26,7 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/magic",
     element: <TerminalAnimation />
-  }
+  },
+
+  
+
 ]);
 
 function App() {

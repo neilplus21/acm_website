@@ -158,10 +158,10 @@ const StyledWrapper = styled.div`
     padding: 1rem;
 
     .event-card {
-      width: 90%;
+      width: 100%;
       max-width: 400px;
       margin: 0 auto;
-      max-height:550px;
+      max-height:600px;
     }
 
     .event-card__header .event-card__date {
@@ -173,7 +173,7 @@ const StyledWrapper = styled.div`
     }
 
     .event-card__image {
-      height: 150px;
+      height: 250px;
     }
 
     .event-card__description {
