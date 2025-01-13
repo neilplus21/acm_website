@@ -161,7 +161,7 @@ const StyledWrapper = styled.div`
       width: 100%;
       max-width: 400px;
       margin: 0 auto;
-      max-height:600px;
+      max-height:650px;
     }
 
     .event-card__header .event-card__date {
@@ -173,7 +173,8 @@ const StyledWrapper = styled.div`
     }
 
     .event-card__image {
-      height: 250px;
+      height:270px;
+      max-height:280px;
     }
 
     .event-card__description {
