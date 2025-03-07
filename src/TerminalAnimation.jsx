@@ -111,12 +111,12 @@ const styles = {
   },
 
   asciiArt: {
-    whiteSpace: 'pre', // Preserve exact formatting
-    fontSize: '1.2rem', // Adjust size for better readability
-    textAlign: 'center', // Center-align ASCII art
-    lineHeight: '1.5', // Ensure proper spacing between lines
-    overflowX: 'auto', // Allow horizontal scrolling for ASCII if needed
-    display: 'block', // Ensure it doesn't interfere with wrapping styles
+    whiteSpace: 'pre', 
+    fontSize: '1.2rem', 
+    textAlign: 'center', 
+    lineHeight: '1.5', 
+    overflowX: 'auto',
+    display: 'block', 
   },
 
 };
@@ -215,7 +215,7 @@ const TerminalAnimation = () => {
       case 'events':
         return [
           "📅 UPCOMING EVENTS:",
-          "- The Great Code Auction: 18th Jan, 2025"
+          "- Manual Testing & Resume Writing 8th March 2025"
         ];
       case 'clear':
         setOutput([]);
