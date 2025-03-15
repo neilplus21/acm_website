@@ -43,7 +43,7 @@ const Events = () => {
         </div>
 
         <div className="event-card__header">
-          <div className="event-card__upcoming-badge">Upcoming</div>
+         {/* <div className="event-card__upcoming-badge">Upcoming</div>*/}
           <div className="event-card__date">Saturday, 8th March 2025</div>
           <div className="event-card__title">Manual Testing & Resume Writing</div>
         </div>
@@ -58,12 +58,12 @@ const Events = () => {
           </div>
           <div className="event-card__actions">
             <a
-              className="event-card__button event-card__button--register"
-              href="https://forms.gle/nvnVCksphbdQV9nf7"
+              className="event-card__button event-card__button--ended"
+              /*href="https://forms.gle/nvnVCksphbdQV9nf7"
               target='_blank'
-              rel="noopener noreferrer"
+              rel="noopener noreferrer"*/
             >
-              Register now!
+              Ended
             </a>
           </div>
         </div>
